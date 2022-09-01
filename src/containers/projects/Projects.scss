@@ -1,0 +1,68 @@
+.project-grid {
+  display: grid;
+  height: 1000px;
+  min-height: 400px;
+  max-height: 50vh;
+
+  gap: 1rem;
+  grid-template-columns:
+  [start] 25%
+  [first] 25%
+  [second] 25%
+  [third] 25%
+  [end];
+
+grid-template-rows:
+  [start] 25%
+  [first] 25%
+  [second] 25%
+  [third] 25%
+  [end];
+}
+
+.project {
+  background: #f2f2f2;
+  border: 1px solid grey;
+}
+
+.project-1 {
+  grid-column-start: start;
+  grid-column-end: second;
+  grid-row-start: start;
+  grid-row-end: second;
+}
+
+.project-2 {
+  grid-column-start: second;
+  grid-column-end: end;
+  grid-row-start: start;
+  grid-row-end: first;
+}
+
+.project-3 {
+  grid-column-start: second;
+  grid-column-end: end;
+  grid-row-start: first;
+  grid-row-end: second;
+}
+
+.project-4 {
+  grid-column-start: start;
+  grid-column-end: first;
+  grid-row-start: second;
+  grid-row-end: end;
+}
+
+.project-5 {
+  grid-column-start: first;
+  grid-column-end: second;
+  grid-row-start: second;
+  grid-row-end: end;
+}
+
+.project-6 {
+  grid-column-start: second;
+  grid-column-end: third;
+  grid-row-start: second;
+  grid-row-end: third;
+}
