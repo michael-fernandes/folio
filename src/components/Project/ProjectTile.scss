@@ -1,0 +1,40 @@
+.tile-desc {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.tile {
+  padding: 15px;
+
+  h3, h4 {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .tile-discipline {
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(1, 1fr);
+
+  .project-icon {
+    grid-column: 5;
+    grid-row: 1/1;
+  }
+
+
+  .tile-content {
+    grid-column: 1/5;
+    grid-row: 1/1;
+  }
+}

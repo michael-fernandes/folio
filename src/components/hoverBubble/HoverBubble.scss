@@ -1,0 +1,18 @@
+.hover-bubble-container {
+  position: relative;
+  height: 100%;
+  
+  margin: 0px auto;
+  // width set in jsx
+  // height set in jsx
+
+  .hover-bubble {
+    //https://stackoverflow.com/questions/14562457/center-oversized-image-in-div   
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+}

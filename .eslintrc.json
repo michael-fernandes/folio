@@ -1,10 +1,16 @@
 {
-  "extends": ["airbnb-typescript", "plugin:react/jsx-runtime"],
+  "extends": ["airbnb-typescript", "plugin:react/jsx-runtime", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
   "rules": {
     "react/require-default-props": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
+      }
+    ]
   }
 }

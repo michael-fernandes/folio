@@ -1,0 +1,20 @@
+.content {
+  @extend .margin-20 !optional;
+  
+  max-width: 800px;
+}
+
+.cover1-img {
+  height: auto;
+  width: 100%;
+}
+
+.cover2 {
+  display: flex;
+
+  img {
+    display: block;
+    flex-basis: 2;
+    width: 100%;
+  }
+}

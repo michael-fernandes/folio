@@ -1,0 +1,17 @@
+
+@media only screen and (min-width: 800px) {
+  .landing {
+    display: flex;
+    // align-items: center;
+    margin: 50px;
+  }
+}
+
+.landing > * {
+  padding: 20px;
+}
+
+.hero-description {
+ font-weight: 400;
+ line-height: 1.3em;
+}

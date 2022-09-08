@@ -1,68 +1,90 @@
 .project-grid {
   display: grid;
-  height: 1000px;
-  min-height: 400px;
-  max-height: 50vh;
+  // min-height: 500px;
+  // max-height: 600px;
+  height: auto;
+  margin-bottom: 200px;
 
   gap: 1rem;
+
   grid-template-columns:
-  [start] 25%
-  [first] 25%
-  [second] 25%
-  [third] 25%
+  [start] 1fr
+  [first] 1fr
+  [second] 1fr
+  [third] 1fr
   [end];
 
 grid-template-rows:
-  [start] 25%
-  [first] 25%
-  [second] 25%
-  [third] 25%
+  [start] auto
+  [first] auto
+  [second] auto
+  [third] auto
   [end];
 }
 
+@media only screen and (max-width: 750px) {
+  .project-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .project {
-  background: #f2f2f2;
-  border: 1px solid grey;
+  background: #f2f0e6;
+}
+
+.project-0 {
+  grid-column-start: start;
+  grid-column-end: second;
+  grid-row-start: start;
+  grid-row-end: second;
+  height: 150px;
+  
+  order: 0;
 }
 
 .project-1 {
-  grid-column-start: start;
-  grid-column-end: second;
+  grid-column-start: second;
+  grid-column-end: end;
   grid-row-start: start;
   grid-row-end: second;
+  height: 150px;
+  
+  order: 3;
 }
 
 .project-2 {
-  grid-column-start: second;
-  grid-column-end: end;
-  grid-row-start: start;
-  grid-row-end: first;
+  grid-column-start: start;
+  grid-column-end: second;
+  grid-row-start: second;
+  grid-row-end: third;
+
+  order: 2;
 }
 
 .project-3 {
-  grid-column-start: second;
-  grid-column-end: end;
-  grid-row-start: first;
-  grid-row-end: second;
+  grid-column-start: start;
+  grid-column-end: second;
+  grid-row-start: third;
+  grid-row-end: end;
+
+  order: 2;
 }
 
 .project-4 {
-  grid-column-start: start;
-  grid-column-end: first;
+  grid-column-start: second;
+  grid-column-end: end;
   grid-row-start: second;
-  grid-row-end: end;
+  grid-row-end: third;
+
+  order: 6;
 }
 
 .project-5 {
-  grid-column-start: first;
-  grid-column-end: second;
-  grid-row-start: second;
-  grid-row-end: end;
-}
-
-.project-6 {
   grid-column-start: second;
-  grid-column-end: third;
-  grid-row-start: second;
-  grid-row-end: third;
+  grid-column-end: end;
+  grid-row-start: third;
+  grid-row-end: end;
+
+  order: 6;
 }
