@@ -22,7 +22,7 @@ const projects = [
     description:
       "Making decesion making around quantitive predictions easier for even persons unfamiliar with data decesion making.",
     icon: BusIcon, // Dot plot...?  or a linear dot
-    // link: "bus",
+    link: "bus",
   },
   {
     name: "COVID Model Viz",
