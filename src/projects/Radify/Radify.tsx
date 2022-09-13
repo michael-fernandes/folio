@@ -1,14 +1,29 @@
 import ActionLink from "../../components/link/ActionLink";
+import ContentWrapper from "../../containers/ContentWrapper";
 import CoverImg from "./Radify.png";
+// import Vid from "./bananas.webm";
 // import Cover1 from './Cover2-1.png';
 // import Cover2 from './Cover2-2.png';
 
 export default function Radify() {
   return (
-    <div>
-      <h2 className="title">Radify</h2>
+    <ContentWrapper>
+      <div className="overview container">
+        <div className="overview-title">
+          <h1>Radify</h1>
+        </div>
+        <div className="overview-description">
+          <h4 className="overview-name">Role</h4>
+          <span className="overview-item">Development</span><br /><br />
+
+          <span className="overview-summary">
+            <i>Can a circular representation of a line chart be effective?</i>
+          </span>
+        </div>
+      </div>
       <div className="margin-20">
         <img className="cover1-img margin-20" src={CoverImg} />
+        {/* <video src={Vid} /> */}
       </div>
       <div className="flex center-content">
         <p>
@@ -58,6 +73,6 @@ export default function Radify() {
           </li>
         </ol>
       </div>
-    </div>
+    </ContentWrapper>
   );
 }

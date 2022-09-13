@@ -19,12 +19,12 @@ const gradient = d3.interpolateCool;
 // Ported from: https://observablehq.com/@d3/collision-detection/2
 export default function HoverBubble({ }) {
   const isSmallerScreen = window.innerWidth < 500;
-  const width = isSmallerScreen ? 650 : 750;
+  const width = isSmallerScreen ? window.innerWidth * 2 : 1000;
   const height = width;
   const radius = isSmallerScreen ? 3 : 4;
   const forceHat = isSmallerScreen ? 0.001 : 0.0023;
   const numNodes = isSmallerScreen ? 150 : 200;
-
+  console.log(window.innerWidth);
   const ref = useRef(null);
 
   const nodes = useMemo(
@@ -47,10 +47,8 @@ export default function HoverBubble({ }) {
 
       const pointed = (event: SyntheticEvent) => {
         let [x, y] = d3.pointer(event);
-        console.log("we made it", x, width / 4);
 
         if (x < width / 4) {
-          console.log("we made it");
           x = x * -1;
         }
 
@@ -109,7 +107,7 @@ export default function HoverBubble({ }) {
 
       return () => simulation.stop();
     }
-  }, [ref]);
+  }, [ref, window.innerWidth]);
 
   return (
     <section

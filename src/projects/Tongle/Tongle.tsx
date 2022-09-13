@@ -1,3 +1,5 @@
+import ContentWrapper from '../../containers/ContentWrapper'
+
 import GasTax from './imgs/gas_tax.jpg'
 import InContext from './imgs/in_context.jpg'
 import PdDiagram from './imgs/pd.png'
@@ -24,193 +26,204 @@ import poster from './imgs/poster.png'
 
 export default function Tongle() {
   return (
-    <>
-      <div className="writeup-wrapper">
-        <p className="margin-20">
-          <a href="https://www.reddit.com/r/dataisbeautiful/comments/wxpx50/price_per_a_pound_of_bananas_oc/">
-            {" "}
-            <b><i>
-              This is a port from my post grad portfolio... needs rewriting and focusing and a proper audience.
-            </i></b>
-          </a>
+    <ContentWrapper>
+      <div className="overview container">
+        <div className="overview-title">
+          <h1>Tongle</h1>
+        </div>
+        <div className="overview-description">
+          <h4 className="overview-name">Role</h4>
+          <span className="overview-item">Design Researcher</span><br /><br />
+          <span className="overview-summary">
+            <i>Cocreative process to design a Civil Technology that impinged on human values across the political spectrum.</i>
+          </span>
+        </div>
+      </div>
+      <p className="margin-20">
+        <a href="https://www.reddit.com/r/dataisbeautiful/comments/wxpx50/price_per_a_pound_of_bananas_oc/">
+          {" "}
+          <b><i>
+            This is a port from my post grad portfolio... needs rewriting and focusing and a proper audience.
+          </i></b>
+        </a>
+      </p>
+      <div className="content">
+        <div className="video-wrapper">
+          <iframe width="100%" height="320" src="https://www.youtube.com/embed/OKMhZurVVe4" frameBorder="0" allowFullScreen={true}></iframe>
+        </div>
+      </div>
+
+      <div className="content">
+        <h2>The problem</h2>
+        <div className="flex-wrapper flex-align-center">
+          <div className="flex-left">
+            <p className="content-exp">
+              As automotive technology advances, so does the way we need to think about supporting our transportation infrastructure in general. Specifically, funding for road infrasturcutre is in jeaprody.
+            </p>
+            <ul className="process-points">
+              <li>Funding for road infrasturcutre is decreasing</li>
+              <li>The current method, a "tax at the pump" is increasingly inefficent</li>
+              <li>Some cars(like fully electric) don't contribute any money to "tax at a pump funding"</li>
+              <li>Fuel inefficent cars are forced to contribute an unfair amount</li>
+            </ul>
+
+          </div>
+          <div className="flex-right half-width">
+            <img src={GasTax} className="half-width" />
+          </div>
+        </div>
+
+        <h3>Why change?</h3>
+        <p className="content-exp">
+          <ul className="process-points">
+            <li>Charge all road users in porportion to how much they use the roads</li>
+            <li>Future proof the way we pay for road infrastructure</li>
+          </ul>
+        </p>
+
+        <h3>The Proposed Solution</h3>
+        <p className="content-exp">
+          A Road Usage Charge(RUC) seeks to fund road infrastructure by charging tax paying citizens in proportion to how much they use Washington state roads. As a capstone team in the Human Centered Design and Engineering department, my team and I were approached by the Washingotn Transportation Comission to come up with a mobile phone application that can be used in a RUC.
         </p>
         <div className="content">
-          <div className="video-wrapper">
-            <iframe width="100%" height="320" src="https://www.youtube.com/embed/OKMhZurVVe4" frameBorder="0" allowFullScreen={true}></iframe>
-          </div>
+          <img src={InContext} className="half-width" />
         </div>
 
         <div className="content">
-          <h2>The problem</h2>
-          <div className="flex-wrapper flex-align-center">
+          <h2>Quick Information</h2>
+          <div className="flex-wrapper">
             <div className="flex-left">
+              <h3>Project Goals</h3>
               <p className="content-exp">
-                As automotive technology advances, so does the way we need to think about supporting our transportation infrastructure in general. Specifically, funding for road infrasturcutre is in jeaprody.
-              </p>
-              <ul className="process-points">
-                <li>Funding for road infrasturcutre is decreasing</li>
-                <li>The current method, a "tax at the pump" is increasingly inefficent</li>
-                <li>Some cars(like fully electric) don't contribute any money to "tax at a pump funding"</li>
-                <li>Fuel inefficent cars are forced to contribute an unfair amount</li>
-              </ul>
+                <ul className="process-points">
+                  <li>Design a mobile app experience which citizens of Washington State can use to monitor how many miles they drive on public roads</li>
+                  <li>Design a Road Usage Charge system that affects driver's lifes as minimally and harmlessly as possible</li>
+                </ul>
 
-            </div>
-            <div className="flex-right half-width">
-              <img src={GasTax} className="half-width" />
-            </div>
-          </div>
-
-          <h3>Why change?</h3>
-          <p className="content-exp">
-            <ul className="process-points">
-              <li>Charge all road users in porportion to how much they use the roads</li>
-              <li>Future proof the way we pay for road infrastructure</li>
-            </ul>
-          </p>
-
-          <h3>The Proposed Solution</h3>
-          <p className="content-exp">
-            A Road Usage Charge(RUC) seeks to fund road infrastructure by charging tax paying citizens in proportion to how much they use Washington state roads. As a capstone team in the Human Centered Design and Engineering department, my team and I were approached by the Washingotn Transportation Comission to come up with a mobile phone application that can be used in a RUC.
-          </p>
-          <div className="content">
-            <img src={InContext} className="half-width" />
-          </div>
-
-          <div className="content">
-            <h2>Quick Information</h2>
-            <div className="flex-wrapper">
-              <div className="flex-left">
-                <h3>Project Goals</h3>
-                <p className="content-exp">
-                  <ul className="process-points">
-                    <li>Design a mobile app experience which citizens of Washington State can use to monitor how many miles they drive on public roads</li>
-                    <li>Design a Road Usage Charge system that affects driver's lifes as minimally and harmlessly as possible</li>
-                  </ul>
-
-                </p>
-              </div>
-              <div className="flex-right  half-width">
-                <div className="summary-item">
-                  <h3 className="summary-title">The Team</h3>
-                  <span className="summary-person">Project Manager: <i>Alex Gilbert</i></span>
-                  <span className="summary-person">UX Designer: <i>Shin Young Lucia</i>, <i>Molly Fallen</i></span>
-                  <span className="summary-person">Design Researcher: <i>Michael Fernandes</i></span>
-                </div>
-                <div className="summary-item">
-                  <h3 className="summary-title">Length</h3>
-                  <span className="summary-description">15 Weeks: 5 planning, 10 execution</span>
-                </div>
-
-                <div className="summary-item">
-                  <h3 className="summary-title">Sponsor</h3>
-                  <span className="summary-description">Washington Transportation Commission, D'artagnan Consulting</span>
-                </div>
-              </div>
-            </div>
-            <div className="content-short">
-              <h2>Outcome Highlights</h2>
-              <h3 className="summary-title">The app</h3>
-              <span className="summary-description">Tongle is a fully branded mobile application. It was submitted to the Washington State Transportation Commission for review</span>
-
-              <h3 className="summary-title">The Process</h3>
-              <span className="summary-description">One of the first examples of participatory design used to create a High Tech Civil Technology.</span>
-
-              <h3 className="summary-title">Recognition</h3>
-              <span className="summary-person">Washington State Transportation Comission:<br /><i>Mobile Innovation Challenge Grand Winner</i></span>
-              <span className="summary-person">University of Washington Department of Human Centered Design and Engineering:<br /><i> Best in Show</i></span>
-              <span className="summary-person">University of Washington College of Engineering:<br /><i>Capstone Funding Grant Recipient</i></span>
-            </div>
-          </div>
-        </div >
-
-        <div className="content">
-          <h2>Why Inclusive Design?</h2>
-          <div className='flex-wrapper'>
-            <div className="flex-left">
-              <img className="img-md" src={PdDiagram} />
-            </div>
-            <div className="flex-right">
-              <p className="content-exp">
-                Upon getting our assignment for capstone, my team and I were a little bit lost, for a lack of better words. The app suggested clearly was going to run into some problems. It is obvious how this system might help our roads but, most of our classNamemates had this sense too. A solution for a road usage charge would invade people’s privacy, sense of agency and be highly resisted in a state where transportation is a bonding factor. Creating a mobile app solution for the RUC would require including a diverse range of factors and values that people placed on the application.
               </p>
             </div>
-          </div>
+            <div className="flex-right  half-width">
+              <div className="summary-item">
+                <h3 className="summary-title">The Team</h3>
+                <span className="summary-person">Project Manager: <i>Alex Gilbert</i></span>
+                <span className="summary-person">UX Designer: <i>Shin Young Lucia</i>, <i>Molly Fallen</i></span>
+                <span className="summary-person">Design Researcher: <i>Michael Fernandes</i></span>
+              </div>
+              <div className="summary-item">
+                <h3 className="summary-title">Length</h3>
+                <span className="summary-description">15 Weeks: 5 planning, 10 execution</span>
+              </div>
 
-          <h2>Focusing on Inclusiveness</h2>
-          <p className="quote"><b>Users, no matter who they are, are not one dimensional. By designing for inclusivity, designs also account for the multiplicity of all states users might take on.</b></p>
-          <p className="content-exp">
-            Designing for inclusivity means you design for everybody. For example if you design an Xbox controller for a disabled person with one hand, you also design for a the Mother that is holding her baby while trying to game another, the snowboarder who broke their arm, and a person trying to talk to their mom with one hand and game with another.
-          </p>
+              <div className="summary-item">
+                <h3 className="summary-title">Sponsor</h3>
+                <span className="summary-description">Washington Transportation Commission, D'artagnan Consulting</span>
+              </div>
+            </div>
+          </div>
+          <div className="content-short">
+            <h2>Outcome Highlights</h2>
+            <h3 className="summary-title">The app</h3>
+            <span className="summary-description">Tongle is a fully branded mobile application. It was submitted to the Washington State Transportation Commission for review</span>
+
+            <h3 className="summary-title">The Process</h3>
+            <span className="summary-description">One of the first examples of participatory design used to create a High Tech Civil Technology.</span>
+
+            <h3 className="summary-title">Recognition</h3>
+            <span className="summary-person">Washington State Transportation Comission:<br /><i>Mobile Innovation Challenge Grand Winner</i></span>
+            <span className="summary-person">University of Washington Department of Human Centered Design and Engineering:<br /><i> Best in Show</i></span>
+            <span className="summary-person">University of Washington College of Engineering:<br /><i>Capstone Funding Grant Recipient</i></span>
+          </div>
         </div>
-        <div className="content">
-          <h2>Choosing Participatory Design</h2>
-          <div className="half-img content">
-            <img src={ProcessChart} className="half-width" />
+      </div >
+
+      <div className="content">
+        <h2>Why Inclusive Design?</h2>
+        <div className='flex-wrapper'>
+          <div className="flex-left">
+            <img className="img-md" src={PdDiagram} />
           </div>
-          <h3> What is pariticpatory Design?</h3>
+          <div className="flex-right">
+            <p className="content-exp">
+              Upon getting our assignment for capstone, my team and I were a little bit lost, for a lack of better words. The app suggested clearly was going to run into some problems. It is obvious how this system might help our roads but, most of our classNamemates had this sense too. A solution for a road usage charge would invade people’s privacy, sense of agency and be highly resisted in a state where transportation is a bonding factor. Creating a mobile app solution for the RUC would require including a diverse range of factors and values that people placed on the application.
+            </p>
+          </div>
+        </div>
+
+        <h2>Focusing on Inclusiveness</h2>
+        <p className="quote"><b>Users, no matter who they are, are not one dimensional. By designing for inclusivity, designs also account for the multiplicity of all states users might take on.</b></p>
+        <p className="content-exp">
+          Designing for inclusivity means you design for everybody. For example if you design an Xbox controller for a disabled person with one hand, you also design for a the Mother that is holding her baby while trying to game another, the snowboarder who broke their arm, and a person trying to talk to their mom with one hand and game with another.
+        </p>
+      </div>
+      <div className="content">
+        <h2>Choosing Participatory Design</h2>
+        <div className="half-img content">
+          <img src={ProcessChart} className="half-width" />
+        </div>
+        <h3> What is pariticpatory Design?</h3>
+        <ul>
+          <li>Participatory design puts participants at the center of the design process.</li>
+          <li>For a design result to be participatory, the project has to some how increase the agency of the end users of the design</li>
+          <li>Design decisions are directed as much as possible by participants</li>
+        </ul>
+
+        <h3>How we used participatory design</h3>
+        <p className="content-exp">
           <ul>
-            <li>Participatory design puts participants at the center of the design process.</li>
-            <li>For a design result to be participatory, the project has to some how increase the agency of the end users of the design</li>
-            <li>Design decisions are directed as much as possible by participants</li>
+            <li>Series of 3 co-design workshops with 10 participants</li>
+            <li><b>Agile method using a series of design and rearch sprints</b></li>
+            <li>Each research and design sprint was a week long</li>
           </ul>
+        </p>
+      </div>
 
-          <h3>How we used participatory design</h3>
-          <p className="content-exp">
-            <ul>
-              <li>Series of 3 co-design workshops with 10 participants</li>
-              <li><b>Agile method using a series of design and rearch sprints</b></li>
-              <li>Each research and design sprint was a week long</li>
-            </ul>
-          </p>
+      <div className="content">
+        <h2>Workshop #1</h2>
+        <div className="flex-wrapper">
+          <img src="img/tongle/people1.jpg" className="third" />
+          <img src="img/tongle/people2.jpg" className="third" />
+          <img src="img/tongle/people3.jpg" className="third" />
         </div>
-
-        <div className="content">
-          <h2>Workshop #1</h2>
-          <div className="flex-wrapper">
-            <img src="img/tongle/people1.jpg" className="third" />
-            <img src="img/tongle/people2.jpg" className="third" />
-            <img src="img/tongle/people3.jpg" className="third" />
-          </div>
-          <div className="content-exp">
-            During Workshop #1 number we did mostly exploratory activities.
-            <ul>
-              <li>Introduction to Participatory Design, RUC</li>
-              <li><a className="text-link" href="https://books.google.com/books?id=UDwlDwAAQBAJ&pg=PA117&lpg=PA117&dq=likes+dislikes+and+design+ideas+pd&source=bl&ots=NEWQ1GwrOe&sig=UI1K1qVPEmAe_pj8-G7oqiZQKgY&hl=en&sa=X&ved=0ahUKEwjGoKOT__bYAhUS5GMKHV05BvMQ6AEIRjAI#v=onepage&q=likes%20dislikes%20and%20design%20ideas%20pd&f=false">Likes, Dislikes and Design Ideas</a></li>
-              <li><a className="text-link" href="https://www.google.com/search?ei=4gBtWobpOKni0gLMtIHwCA&q=identifying+bad+design+ideas+stanford+d+school&oq=identifying+bad+design+ideas+stanford+d+school&gs_l=psy-ab.3...8923.11675.0.11786.20.9.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..20.0.0....0.hV5krkkVcb4">How might we design the worst possible RUC? (Bad Design Brainstorming)</a></li>
-            </ul>
-          </div>
-          <p className="content-exp">
-            During these activities we collected sticky notes and wrote down notes on conversations we had and overhead between are participants. Afterwards we coded our notes into sticky note like ideas and user our participant generated sticky notes and our own to affinity board.
-          </p>
+        <div className="content-exp">
+          During Workshop #1 number we did mostly exploratory activities.
+          <ul>
+            <li>Introduction to Participatory Design, RUC</li>
+            <li><a className="text-link" href="https://books.google.com/books?id=UDwlDwAAQBAJ&pg=PA117&lpg=PA117&dq=likes+dislikes+and+design+ideas+pd&source=bl&ots=NEWQ1GwrOe&sig=UI1K1qVPEmAe_pj8-G7oqiZQKgY&hl=en&sa=X&ved=0ahUKEwjGoKOT__bYAhUS5GMKHV05BvMQ6AEIRjAI#v=onepage&q=likes%20dislikes%20and%20design%20ideas%20pd&f=false">Likes, Dislikes and Design Ideas</a></li>
+            <li><a className="text-link" href="https://www.google.com/search?ei=4gBtWobpOKni0gLMtIHwCA&q=identifying+bad+design+ideas+stanford+d+school&oq=identifying+bad+design+ideas+stanford+d+school&gs_l=psy-ab.3...8923.11675.0.11786.20.9.0.0.0.0.0.0..0.0....0...1.1.64.psy-ab..20.0.0....0.hV5krkkVcb4">How might we design the worst possible RUC? (Bad Design Brainstorming)</a></li>
+          </ul>
         </div>
-        <div className="content">
-          <img src="img/tongle/affinity.jpg" className="half-width" />
-        </div>
-        <div className="content">
-          <h3>A Survey to Validate Our Assumption</h3>
-          <div className="flex-wrapper">
-            <div className="flex-left">
-              <div className="container">
-                <a className="text-link" href="https://goo.gl/forms/KRRbCLVDkIRVG4kY2" target="blank">
-                  <img src={Survey} className="img-md" />
-                </a>
-                <p className="img-text">Take Survey</p>
-              </div>
+        <p className="content-exp">
+          During these activities we collected sticky notes and wrote down notes on conversations we had and overhead between are participants. Afterwards we coded our notes into sticky note like ideas and user our participant generated sticky notes and our own to affinity board.
+        </p>
+      </div>
+      <div className="content">
+        <img src="img/tongle/affinity.jpg" className="half-width" />
+      </div>
+      <div className="content">
+        <h3>A Survey to Validate Our Assumption</h3>
+        <div className="flex-wrapper">
+          <div className="flex-left">
+            <div className="container">
+              <a className="text-link" href="https://goo.gl/forms/KRRbCLVDkIRVG4kY2" target="blank">
+                <img src={Survey} className="img-md" />
+              </a>
+              <p className="img-text">Take Survey</p>
             </div>
-            <div className="flex-right">
-              <p className="content-exp">
-                After affinity diagramming we noticed that our groups formed themes or articulated values. Upon reflection we decided that the best thing to do here would be to use our groups to create values that were selected.
-              </p>
-
-            </div>
-            The survey allows users to rate each value on a 7 point Likert scale and optinaly provide an explanation to their rating.
           </div>
+          <div className="flex-right">
+            <p className="content-exp">
+              After affinity diagramming we noticed that our groups formed themes or articulated values. Upon reflection we decided that the best thing to do here would be to use our groups to create values that were selected.
+            </p>
 
-          <a className="text-link" href="https://goo.gl/forms/KRRbCLVDkIRVG4kY2" target="blank">
-            <div className="sq-button lookbook-button">View Survey</div>
-          </a>
+          </div>
+          The survey allows users to rate each value on a 7 point Likert scale and optinaly provide an explanation to their rating.
         </div>
-      </div ><h3>Insights from workshop #1</h3><ul>
+
+        <a className="text-link" href="https://goo.gl/forms/KRRbCLVDkIRVG4kY2" target="blank">
+          <div className="sq-button lookbook-button">View Survey</div>
+        </a>
+      </div>
+      <h3>Insights from workshop #1</h3><ul>
         <li>There is a divide between what urban and rural drivers need in a RUC</li>
         <li>There is a preference for keeping the tech in a RUC as low as possible</li>
       </ul><h3>Insights from workshop #1</h3><ul>
@@ -396,6 +409,7 @@ export default function Tongle() {
             </div>
           </a>
         </div>
-      </div></>
+      </div>
+    </ContentWrapper>
   )
 }

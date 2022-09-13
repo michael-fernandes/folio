@@ -18,3 +18,31 @@
     width: 100%;
   }
 }
+
+.overview > * {
+  width: 50%;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  min-height: 400;
+
+  .overview-title {
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .overview-description {
+    padding: 20px;
+    background: #f2f0e6;
+    color: #353e58;
+
+    .overview-name {
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+
+}

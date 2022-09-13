@@ -28,6 +28,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy:browse": "yarn deploy && yarn browse",
+    "browse": "gcloud app browse",
+    "deploy": "yarn run build && gcloud app deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

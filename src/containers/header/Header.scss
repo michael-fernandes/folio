@@ -1,0 +1,41 @@
+header { 
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  .header-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .action-wrapper {
+    z-index: 100;
+  }
+  .actions {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    z-index: 100;
+
+    .action {
+      margin: 0px 5px;
+      padding: 0px 5px;
+    }
+  }
+
+  .header-link {
+    color: 'inherit';
+  }
+}
+
+.header-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

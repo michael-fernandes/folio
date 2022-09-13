@@ -3,6 +3,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
+  "plugins": ["import"],
   "rules": {
     "react/require-default-props": "off",
     "react/prop-types": "off",

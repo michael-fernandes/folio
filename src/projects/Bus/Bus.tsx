@@ -1,78 +1,37 @@
+import ContentWrapper from "../../containers/ContentWrapper";
+
 export default function Bus() {
   return (
-    <div className="writeup-wrapper">
-      <p className="margin-20">
-        <a href="https://www.reddit.com/r/dataisbeautiful/comments/wxpx50/price_per_a_pound_of_bananas_oc/">
-          {" "}
-          <b><i>
-            This is a port from my post grad portfolio... needs rewriting and focusing and a proper audience.
-          </i></b>
-        </a>
-      </p>
-      <div className="section">
-        <h1 className="spaced"> Uncertain Bus</h1>
-        <div className="video-wrapper" style={{
-          width: "100%",
-          height: 'auto'
-        }}>
-          <iframe width="100%" height="1000%" src="https://www.youtube.com/embed/imD4P8xqCEI" frameBorder="0"
-            allowFullScreen={true} className="mb4" />
+    <ContentWrapper>
+      <div className="overview container">
+        <div className="overview-title">
+          <h1>Uncertainty displays for on the go decision making</h1>
+        </div>
+        <div className="overview-description">
+          <h4 className="overview-name">Role</h4>
+          <span className="overview-item">Research assistant</span><br /><br />
+
+          <h4 className="overview-name">Team</h4>
+          <span className="overview-item">Two Research Assistants and Three Research Professors</span><br /><br />
+          <span className="overview-summary">
+            <i>A NSF funded project examining how visual representations of uncertainty affect decision making.</i>
+          </span>
         </div>
       </div>
       <div className="section">
-        <h2> Introduction</h2>
-        <p className="content-exp">
-          Humans aren't always predictable. Just because we are given correct information doesn't always mean we know
-          what to do with it. However, guiding people to better decisions can of course be aided by User-Centered
-          Design. Artificial intelligence in particular presents a way to aid human cognition. A simplified way to think
-          about AI is as computer generated predictions. This project aims to better aid humans understanding of
-          computer generated predictions so that humans can take better action from those computer generated
-          predictions.
-        </p><br />
+        <div className="video-wrapper" style={{
+          width: "100%",
+          height: '400'
+        }}>
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/imD4P8xqCEI" frameBorder="0"
+            allowFullScreen={true} className="mb4" />
+        </div>
       </div>
 
       <div className="mini-section animate" id="section2">
         <img src="img/ubus/bus_in_context.png" className="cover-img" data-action="zoom" />
       </div>
       <div className="content">
-        <h2>Quick Information</h2>
-        <div className="flex-wrapper">
-          <div className="flex-left">
-            <h3>High Level Goal</h3>
-            <p className="content-exp-ragged">
-              Design an interface that allows bus riders to make better decisions based off the computer generated
-              prediction of when a bus will arrive.
-            </p>
-            <ul className="content-exp">
-              <li>Visualizations must be usable by people with a wide range of experience with data</li>
-              <li>Find the design that best fits the question trying to be answered by user.</li>
-            </ul>
-          </div>
-          <div className="flex-right  half-width">
-            <div className="summary-item">
-              <h3 className="summary-title">My role</h3>
-              <span className="summary-person">Research Assistant</span>
-            </div>
-            <div className="summary-item">
-              <h3 className="summary-title">Length</h3>
-              <span className="summary-description">6 months design, 1 year testing and result reporting</span>
-            </div>
-          </div>
-        </div>
-        <div className="content-short">
-          <h2>Outcome Highlights</h2>
-          <h3 className="summary-title">Result</h3>
-          <span className="summary-description">The ultimate result of this project was a set of designs I called
-            Uncertainty Displays. They allow users to successfully make decisions using Uncertainty information. I led
-            the the team to publish a <a href="img/ubus/ubus.pdf" className="text-link">paper</a> at the 2018 ACM conference
-            on Computer-Human Interaction</span>
-          <h3 className="summary-title">Recognition</h3>
-          <span className="summary-person">
-            Published in the 2018 ACM conference on Computer-Human Interaction with Honorable
-            Mention Award (top 5% of papers at conference).
-          </span>
-        </div>
-
         <h3 className="summary-title">Process</h3>
         <span className="summary-description">User-Centered Design process using Surveys, Iterative Usability Tests and a
           Quantiative Experiment to refine and iterate.</span>
@@ -196,7 +155,7 @@ export default function Bus() {
           </table>
         </div>
         <div className="section">
-          <h2>The first (of many) mistakes...</h2>
+          <h2>Wrong turn</h2>
           <p className="content-exp">
             I began my design process by making full mockups. Although I still intended do many rounds of iterations, my
             mistake here was thinking too big too fast.
@@ -222,7 +181,7 @@ export default function Bus() {
           <div className="flex-wrapper flex-align-center">
             <div className="flex-left half-width">
               <p className='content-exp'>
-                From the smaller components, I rapidly itterated complete layouts. In this case, I choose to use stand in
+                From the smaller components, I rapidly iterated complete layouts. In this case, I choose to use stand in
                 information (instead of a blank wireframe boxes) because, the layout of information might impact the
                 understanding made by bus riders.
               </p>
@@ -236,7 +195,7 @@ export default function Bus() {
               <div className="flex-left half-width">
                 <p className='content-exp'>
                   To mimic the same look, feel and the information displayed on on current Realtime Transit Apps, I
-                  embeded all the same infomration dispayed on the popular trip planning app OneBusAway into the
+                  embeded all the same information displayed on the popular trip planning app OneBusAway into the
                   visualizations I was designing.
                 </p>
               </div>
@@ -253,7 +212,7 @@ export default function Bus() {
                     Together the group decided what we thought would be the best layout for each bus'arrival(a single row
                     in the interface). I next pieced together the rows to create high fidelity mockups of the User
                     Interface. Putting the pieces together we wanted to see how the UI looked as a cohesive whole and did
-                    additional changes to accomadate for how the UI came together as a system.
+                    additional changes to accomodate for how the UI came together as a system.
                   </p>
                 </div>
                 <div className="flex-left half-width animate">
@@ -420,7 +379,6 @@ export default function Bus() {
           </div>
         </a>
       </div>
-    </div>
-
+    </ContentWrapper >
   );
 }

@@ -2,6 +2,7 @@ import ProjectTile from "../../components/Project/ProjectTile";
 import "./Projects.scss";
 import RadifyIcon from "../../projects/Radify/RadifyIcon.svg";
 import BusIcon from "../../projects/Bus/BusIcon.svg";
+import ContentWrapper from "../ContentWrapper";
 
 type Props = {};
 
@@ -11,12 +12,12 @@ const projects = [
     discipline: "design research",
     area: "Civil Tech",
     description:
-      "Designing for a civil technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
+      "Co-creating design for a civil technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
     icon: RadifyIcon,
     link: "tongle",
   },
   {
-    name: "Uncertain Bus:",
+    name: "Uncertain Displays for Decision Making:",
     discipline: "design research + prototyping",
     area: "Academic Resaearch",
     description:
@@ -31,7 +32,7 @@ const projects = [
     description:
       "A rapidly deployed covid forecast visualizaiton tool in the first weeks of march 2020.",
     icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-    // link: "forecast",
+    link: "forecast",
   },
   {
     name: "Child Mortality",
@@ -39,7 +40,7 @@ const projects = [
     area: "Public Health",
     description: "Showcasing of a website showing the ",
     icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-    // link: "child-mortality",
+    link: "child-mortality",
   },
   {
     name: "Radify",
@@ -49,29 +50,39 @@ const projects = [
     icon: RadifyIcon, //
     link: "radify",
   },
-  {
-    name: "Protein Builder",
-    discipline: "development + design",
-    area: "Health + Sustainability",
-    description: "Showcasing of a website showing the ",
-    icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-    // link: "protein",
-  },
+  // {
+  //   name: "Protein Builder",
+  //   discipline: "development + design",
+  //   area: "Health + Sustainability",
+  //   description: "Showcasing of a website showing the ",
+  //   icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
+  //   // link: "protein",
+  // },
+  // {
+  //   name: "Change.org for product ideas",
+  //   discipline: "cocreative ",
+  //   area: "Design",
+  //   description: "A design experiment",
+  //   icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
+  //   // link: "protein",
+  // },
 ];
 
 export default function Projects({ }: Props) {
   return (
-    <section className="container">
-      <h1>Projects</h1>
-      <div className="project-grid">
-        {projects.map((p, index) => (
-          <ProjectTile
-            key={`project-${index}`}
-            className={`project project-${index}`}
-            {...p}
-          />
-        ))}
-      </div>
-    </section>
+    <ContentWrapper classWrapper="gradient">
+      <section>
+        <h1>Projects</h1>
+        <div className="project-grid">
+          {projects.map((p, index) => (
+            <ProjectTile
+              key={`project-${index}`}
+              className={`project project-${index}`}
+              {...p}
+            />
+          ))}
+        </div>
+      </section>
+    </ContentWrapper >
   );
 }

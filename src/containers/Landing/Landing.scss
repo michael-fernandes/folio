@@ -2,16 +2,37 @@
 @media only screen and (min-width: 800px) {
   .landing {
     display: flex;
-    // align-items: center;
-    margin: 50px;
+    margin: 0px;
+    
+    .title {
+      max-width: 500px;
+    }
   }
 }
 
-.landing > * {
-  padding: 20px;
+.landing  {
+  padding: 50px 0px;
+
+  .landing-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin: 0.7rem 0;
+  }
 }
 
+
 .hero-description {
- font-weight: 400;
- line-height: 1.3em;
+  font-weight: 400;
+  line-height: 1em;
 }
