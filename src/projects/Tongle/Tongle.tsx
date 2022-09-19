@@ -1,6 +1,6 @@
 import ContentWrapper from '../../containers/ContentWrapper'
 
-import GasTax from './imgs/gas_tax.jpg'
+// import GasTax from './imgs/gas_tax.jpg'
 import InContext from './imgs/in_context.jpg'
 import PdDiagram from './imgs/pd.png'
 import ProcessChart from './imgs/process_horizontal.jpg'
@@ -29,152 +29,85 @@ export default function Tongle() {
     <ContentWrapper>
       <div className="overview container">
         <div className="overview-title">
-          <h1>Tongle</h1>
+          <h1>Tongle: Civil Tech for a Road Usage Charge</h1>
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
           <span className="overview-item">Design Researcher</span><br /><br />
           <span className="overview-summary">
-            <i>Cocreative process to design a Civil Technology that impinged on human values across the political spectrum.</i>
+            <i>Cocreative process to design a data collecting Civil Technology that impinges on human values across the political spectrum.</i>
+
           </span>
         </div>
       </div>
-      <p className="margin-20">
-        <a href="https://www.reddit.com/r/dataisbeautiful/comments/wxpx50/price_per_a_pound_of_bananas_oc/">
-          {" "}
-          <b><i>
-            This is a port from my post grad portfolio... needs rewriting and focusing and a proper audience.
-          </i></b>
-        </a>
-      </p>
       <div className="content">
         <div className="video-wrapper">
-          <iframe width="100%" height="320" src="https://www.youtube.com/embed/OKMhZurVVe4" frameBorder="0" allowFullScreen={true}></iframe>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OKMhZurVVe4" frameBorder="0" allowFullScreen={true}></iframe>
         </div>
       </div>
 
       <div className="content">
-        <h2>The problem</h2>
+        <h2>The Challenge</h2>
+        <p>
+          A road usage charge (RUC) has been suggested across <a className="text-link" href="https://www.ibtta.org/road-usage-charge-ruc">the united states</a>, which proposes
+          a proportional fee to the amount driven on the road as a direct replacement for taxing gasoline. A needed change as cars continue to electrify. A team of 4 and I were
+          tasked with designing a technologic solution that collected a road usage charge.
+        </p>
+        <h2>Strategy</h2>
+        <p>
+          Collecting a Road Usage Charge comes with many complications involving, accuracy, fairness, confidentiality and other human values that made this problem sticky.
+          Together with a team of 4 we embarked with the help of two stellar advisors to design road usage charge technology that was developed through a participatory design process. We thought by using cocreative practices we could drive the design
+          to its most fair form possible.
+        </p>
         <div className="flex-wrapper flex-align-center">
-          <div className="flex-left">
-            <p className="content-exp">
-              As automotive technology advances, so does the way we need to think about supporting our transportation infrastructure in general. Specifically, funding for road infrasturcutre is in jeaprody.
-            </p>
-            <ul className="process-points">
-              <li>Funding for road infrasturcutre is decreasing</li>
-              <li>The current method, a "tax at the pump" is increasingly inefficent</li>
-              <li>Some cars(like fully electric) don't contribute any money to "tax at a pump funding"</li>
-              <li>Fuel inefficent cars are forced to contribute an unfair amount</li>
-            </ul>
-
-          </div>
           <div className="flex-right half-width">
-            <img src={GasTax} className="half-width" />
+            {/* <img src={GasTax} className="half-width" /> */}
           </div>
         </div>
 
-        <h3>Why change?</h3>
-        <p className="content-exp">
-          <ul className="process-points">
-            <li>Charge all road users in porportion to how much they use the roads</li>
-            <li>Future proof the way we pay for road infrastructure</li>
-          </ul>
-        </p>
-
-        <h3>The Proposed Solution</h3>
-        <p className="content-exp">
-          A Road Usage Charge(RUC) seeks to fund road infrastructure by charging tax paying citizens in proportion to how much they use Washington state roads. As a capstone team in the Human Centered Design and Engineering department, my team and I were approached by the Washingotn Transportation Comission to come up with a mobile phone application that can be used in a RUC.
-        </p>
         <div className="content">
           <img src={InContext} className="half-width" />
         </div>
-
-        <div className="content">
-          <h2>Quick Information</h2>
-          <div className="flex-wrapper">
-            <div className="flex-left">
-              <h3>Project Goals</h3>
-              <p className="content-exp">
-                <ul className="process-points">
-                  <li>Design a mobile app experience which citizens of Washington State can use to monitor how many miles they drive on public roads</li>
-                  <li>Design a Road Usage Charge system that affects driver's lifes as minimally and harmlessly as possible</li>
-                </ul>
-
-              </p>
-            </div>
-            <div className="flex-right  half-width">
-              <div className="summary-item">
-                <h3 className="summary-title">The Team</h3>
-                <span className="summary-person">Project Manager: <i>Alex Gilbert</i></span>
-                <span className="summary-person">UX Designer: <i>Shin Young Lucia</i>, <i>Molly Fallen</i></span>
-                <span className="summary-person">Design Researcher: <i>Michael Fernandes</i></span>
-              </div>
-              <div className="summary-item">
-                <h3 className="summary-title">Length</h3>
-                <span className="summary-description">15 Weeks: 5 planning, 10 execution</span>
-              </div>
-
-              <div className="summary-item">
-                <h3 className="summary-title">Sponsor</h3>
-                <span className="summary-description">Washington Transportation Commission, D'artagnan Consulting</span>
-              </div>
-            </div>
-          </div>
-          <div className="content-short">
-            <h2>Outcome Highlights</h2>
-            <h3 className="summary-title">The app</h3>
-            <span className="summary-description">Tongle is a fully branded mobile application. It was submitted to the Washington State Transportation Commission for review</span>
-
-            <h3 className="summary-title">The Process</h3>
-            <span className="summary-description">One of the first examples of participatory design used to create a High Tech Civil Technology.</span>
-
-            <h3 className="summary-title">Recognition</h3>
-            <span className="summary-person">Washington State Transportation Comission:<br /><i>Mobile Innovation Challenge Grand Winner</i></span>
-            <span className="summary-person">University of Washington Department of Human Centered Design and Engineering:<br /><i> Best in Show</i></span>
-            <span className="summary-person">University of Washington College of Engineering:<br /><i>Capstone Funding Grant Recipient</i></span>
-          </div>
-        </div>
-      </div >
-
+      </div>
       <div className="content">
-        <h2>Why Inclusive Design?</h2>
+        <h2>How might a RUC need inclusive design?</h2>
         <div className='flex-wrapper'>
           <div className="flex-left">
             <img className="img-md" src={PdDiagram} />
           </div>
           <div className="flex-right">
             <p className="content-exp">
-              Upon getting our assignment for capstone, my team and I were a little bit lost, for a lack of better words. The app suggested clearly was going to run into some problems. It is obvious how this system might help our roads but, most of our classNamemates had this sense too. A solution for a road usage charge would invade people’s privacy, sense of agency and be highly resisted in a state where transportation is a bonding factor. Creating a mobile app solution for the RUC would require including a diverse range of factors and values that people placed on the application.
+              At first galance, a Road Usage Charge may seem problematic as it potentially puts an excess amount of data in uncertain hands. Examining it deeper
+              uncovers a more equitable system. People who have older cars with higher MPG, to those who drive an electric car can now pay in porportion to how much
+              they use the roads.
+            </p>
+            <p>
+              However, in the pursuit of a more perfect tax system, there arises problems in collecting the precise amount of data to have a honest tax system, while
+              not impinging on people's autonomy became our challenge.
             </p>
           </div>
         </div>
 
-        <h2>Focusing on Inclusiveness</h2>
-        <p className="quote"><b>Users, no matter who they are, are not one dimensional. By designing for inclusivity, designs also account for the multiplicity of all states users might take on.</b></p>
-        <p className="content-exp">
-          Designing for inclusivity means you design for everybody. For example if you design an Xbox controller for a disabled person with one hand, you also design for a the Mother that is holding her baby while trying to game another, the snowboarder who broke their arm, and a person trying to talk to their mom with one hand and game with another.
+        <h2>A democratic approach</h2>
+        <p>
+          Finding a way to position the design in a place that provided a just way to account for tax while also not violating anyone's need for autonomy was tricky.
+          We decied to use a particpatory process that levereged 3 workshops to orient the design to the values of a panel of 10 residents from a range of backgrounds
+          across Washington State. In each workshop my codesigners and I would walk through a series of activities ranging from card sorting to protptype review aimed at continously reorienting the emerging design of
+          the RUC towards the values of the citzens using it.
         </p>
       </div>
       <div className="content">
-        <h2>Choosing Participatory Design</h2>
+        <h2>Design Workshops</h2>
         <div className="half-img content">
           <img src={ProcessChart} className="half-width" />
         </div>
-        <h3> What is pariticpatory Design?</h3>
-        <ul>
-          <li>Participatory design puts participants at the center of the design process.</li>
-          <li>For a design result to be participatory, the project has to some how increase the agency of the end users of the design</li>
-          <li>Design decisions are directed as much as possible by participants</li>
-        </ul>
+        During the spring of 2017, we conducted three sequential workshops culminating with a design sprint using the findings from the workshops
+        to suggest our final form of the Road Usage Charge. Each workshop followed a general pattern of generating ideas and exploring the problem space, before
+        narrowing it through a series of activities. Importantly, we made sure to continually validate assumptions about the problem, design decesions and findings
+        by presenting each in turn to our participants either through in person discussion or voting through surveys.
 
-        <h3>How we used participatory design</h3>
-        <p className="content-exp">
-          <ul>
-            <li>Series of 3 co-design workshops with 10 participants</li>
-            <li><b>Agile method using a series of design and rearch sprints</b></li>
-            <li>Each research and design sprint was a week long</li>
-          </ul>
-        </p>
+        {/* Picture of workshop flow */}
+        {/* <li>For a design result to be participatory, the project has to some how increase the agency of the end users of the design</li> */}
       </div>
 
       <div className="content">
@@ -331,27 +264,6 @@ export default function Tongle() {
                 </span>
               </div>
             </div>
-
-            <h3>The Results</h3>
-            <p className="content-exp">
-              After holding court, the results were in. People preffered prototype #3 and #4. It wasn't unanimous the voting was 0 votes for prototype #1,  2 votes for prototype #2, 4 votes for prototype #3 and 4 votes for prototype #4. The split decision in votes
-            </p>
-          </div>
-          <h3>Design insights from workshop #3</h3>
-          <ul>
-            <li>Participants are more open to a RUC that promotes the ideal of "equity" in society</li>
-          </ul>
-
-          <h3>Insights from workshop #3</h3>
-          <ul>
-            <li>Ending with a hands on a friction activity helps wrap up pd process</li>
-          </ul>
-
-          <div className="content">
-            <h2>Saying Goodbye to Participants</h2>
-            <p className="content-exp">
-              At the end of Workshop #3 we were sad to say goodbye to our participants but, the next part of our journey was just around the corner. During the next two weeks my team and I went through a series of iterations to create Tongle.
-            </p>
           </div>
 
           <div className="content">
@@ -388,26 +300,14 @@ export default function Tongle() {
             <p className="content-exp">
               After finishing this project and while I presented it during capstone, I always highlighted how powerful a process participatory design can be. After some time has passed I have reflected on what the takeaways for me are. A PD process can be time-consuming and hard to get buy-in from stakeholders. However, I think PD's commitment to the user can and should be emulated. In particular, I think adapting an inclusive design perspective can benefit most design projects by allowing for many different forms or types of the user to benefit from an inclusive perspective.
             </p>
-            <p>
-              To show how inclusive design uniquely benefitted Tongle, take the following example.
-            </p>
 
             <p className="quote">
-              By creating a design that allowed those who wanted complete privacy in their location data, Tongle also benefits a range of people. It allows employees to charge their employers on trips taken for company work, it allows a teenager to sneak off to their first concert, or a husband to surprise his wife with a birthday present. By creating an app that allows for flexible use, the user acceptance of the app was increased and thereby a better experience was created overall.
+              By creating a design that allowed those who wanted complete privacy in their location data, Tongle also benefits a range of people.
+              It allows employees to charge their employers on trips taken for company work, it allows a teenager to sneak off to their first concert,
+              or a husband to surprise his wife with a birthday present. By creating an app that allows for flexible use, the user acceptance of the app
+              was increased and thereby a better experience was created overall.
             </p>
           </div>
-
-          <hr />
-          <a href="../">
-            <div className="portfolio-back">
-              <i className="arrow left fa fa-angle-left"></i><i className="arrow left fa fa-angle-left"></i> Back to portfolio
-            </div>
-          </a>
-          <a href="cooking-aid.html">
-            <div className="portfolio-forward">
-              Lookbook <i className="arrow fa fa-angle-right"></i><i className="arrow fa fa-angle-right"></i>
-            </div>
-          </a>
         </div>
       </div>
     </ContentWrapper>

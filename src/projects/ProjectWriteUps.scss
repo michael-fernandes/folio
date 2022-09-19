@@ -1,21 +1,28 @@
 .content {
   @extend .margin-20 !optional;
   
-  max-width: 800px;
+  // max-width: 800px;
+}
+
+.video-wrapper {
+  aspect-ratio: 2 / 1;
 }
 
 .cover1-img {
   height: auto;
   width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .cover2 {
   display: flex;
+  max-width: 100%;
 
   img {
     display: block;
-    flex-basis: 2;
-    width: 100%;
+    width: 50%;
+    max-width: 100%;
+    display: block;
   }
 }
 
@@ -29,8 +36,14 @@
   min-height: 400;
 
   .overview-title {
+    position: relative;
     h1 {
       margin: 0;
+    }
+
+    .overview-button-container {
+      position: absolute;
+      bottom: 0px;
     }
   }
 
@@ -45,4 +58,15 @@
     }
   }
 
+
+}
+
+.writeup {
+  max-width: 800px;
+  margin: auto;
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+  }
 }

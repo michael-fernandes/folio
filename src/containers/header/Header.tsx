@@ -7,7 +7,7 @@ interface Props {
 }
 export default function Header({ isBottom }: Props) {
   return (
-    <ContentWrapper classWrapper={isBottom ? "header-bottom" : ''}>
+    <ContentWrapper classWrapper={isBottom ? "header-bottom" : 'header'}>
       <header>
         <Link to='/' className="header-link"><h1 className="header-heading">Michael Fernandes</h1></Link>
 

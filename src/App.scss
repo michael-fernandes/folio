@@ -7,6 +7,10 @@ html, body {
   position: relative;
 }
 
+.main-container {
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
 .content-wrapper {
   max-width: 1000px;
   padding: 0px 20px;
@@ -29,7 +33,7 @@ a {
 }
 
 .primary-link {
-  background: #FEC203;
+  background: #eebf29;
   border-radius: 4px;
   
   color: white;

@@ -1,63 +1,49 @@
 import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/ContentWrapper";
 // import CoverImg from "./Radify.png";
-import PictoGram from './PictoGram.png';
 // import Cover2 from './Cover2-2.png';
+import PictoAnim from './pictoanim.gif';
+import Line from './Line.png';
+import MapImg from './Map.png';
+
 
 export default function ChildMortality() {
   return (
     <ContentWrapper>
       <div className="overview container">
         <div className="overview-title">
-          <h1>Child mortality</h1>
+          <h1>Under-five child mortality data story</h1>
+          <div className="overview-button-container">
+            <p>
+              <ActionLink href="https://vizhub.healthdata.org/child-mortality">Visit interactive experience</ActionLink>
+            </p>
+          </div>
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
           <span className="overview-item">Development + Design</span><br /><br />
 
           <span className="overview-summary">
-            <i>A story about how child mortality in lower-middle income countries has decreased over the last 30 years.</i>
+            <i>Am interactive experience telling the story of how premature child mortality in lower-middle income countries has decreased over the last 30 years.</i>
           </span>
         </div>
       </div>
-      <img className="cover1-img" src={PictoGram} />
-      <div className="flex center-content">
+      <img src={PictoAnim} className="cover1-img" />
+      {/* <img className="cover1-img" src={PictoGram} /> */}
+      <div className="writeup">
         <p>
-          <ActionLink href="https://vizhub.healthdata.org/child-mortality">Visit App</ActionLink>
+          The annual global number of deaths of children under 5 years of age  has decrease from 19.6 million in 1950 to
+          5.4 million 2017 according to a study <a href="https://www.nature.com/articles/s41586-019-1545-0">published in Nature</a> by Insitute for Health Metrics and Evaluation. Working with
+          colleagues at the insitute I helped design an interactive expefrience for illustrating and communicating this change to
+          lay audienes across the globe. Using wireframes and later interactive prototypes, I collaborated with Quantitative Researchers for the project to
+          devise a story that best communicated their research.
         </p>
       </div>
-      <p>
-        Radify visualizes data in a continuous radial graphics to highlight the
-        seasonality in a timeseries. Inflation data in the form of CPI MoM %
-        change from previous year and commodity indexes is shown as a demo for
-        the charts.
-      </p>
-      <p>
-        Sometimes a line chart can be a little bit vanilla. When you are trying
-        to draw attention to a a dataset, sometimes something a little
-        flashier can be less effective at encoding the data, but more
-        effective at communicating the right data.
-      </p>
-      <p>
-        This project began out of pure curiosity of whether or not a radial
-        line chart using a continuous time series could be communicated with
-        the public.
-      </p>
-      <p>
-        Undoubtedly even with multiple rounds of iteration from feedback, this
-        chart is hard to read. Describe some of the usage metrics from google
-        analytics.
-      </p>
-      <p>
-        Nonetheless the success of the chart seems to lead to some questions:
-      </p>
-      <ol>
-        <li>Can people effectively make times</li>
-        <li>
-          what are the key takeaways that this chart has vs normal line
-          charts
-        </li>
-      </ol>
+      <div className="cover2">
+        <img src={Line} />
+        <img src={MapImg} />
+      </div>
+
     </ContentWrapper>
   );
 }
