@@ -24,7 +24,6 @@ export default function HoverBubble({ }) {
   const radius = isSmallerScreen ? 3 : 4;
   const forceHat = isSmallerScreen ? 0.001 : 0.0023;
   const numNodes = isSmallerScreen ? 150 : 200;
-  console.log(window.innerWidth);
   const ref = useRef(null);
 
   const nodes = useMemo(
@@ -70,6 +69,7 @@ export default function HoverBubble({ }) {
             ctx.moveTo((d.x || 0) + d.r, d.y || 0);
             ctx.arc(d.x || 0, d.y || 0, d.r, 0, 2 * Math.PI);
             ctx.fillStyle = d.id ? d.group : "transparent";
+            ctx.globalAlpha = 0.9;
             ctx.fill();
           }
           ctx.globalCompositeOperation = "lighter";

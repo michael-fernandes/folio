@@ -28,7 +28,8 @@ export default function ProjectTile({
         <h3 className="title project-title">{name}</h3>
         <h4 className="desc tile-discipline">{discipline}</h4>
         <p className="project-description">{description}</p>
-        {link && <Link to={link || "/"}>View more</Link>}
+        <button>View More</button>
+        {/* {link && <Link className="project-tile-link" to={link || "/"}>View more</Link>} */}
       </div>
       <div className="project-icon">
         <img src={icon} alt={"Stick and dot representation of project"} />

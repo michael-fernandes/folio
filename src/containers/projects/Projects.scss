@@ -33,15 +33,15 @@ grid-template-rows:
   background: #f2f0e6;
   // background-image: linear-gradient(135deg, #614385, #516395);
   padding: 10px;
+  text-decoration: unset;
+  color: black;
 }
 
 .project-0 {
   grid-column-start: start;
   grid-column-end: second;
   grid-row-start: start;
-  grid-row-end: second;
-  height: 150px;
-  
+  grid-row-end: second;  
   order: 0;
 }
 
@@ -50,8 +50,6 @@ grid-template-rows:
   grid-column-end: end;
   grid-row-start: start;
   grid-row-end: second;
-  height: 150px;
-  
   order: 3;
 }
 

@@ -1,5 +1,15 @@
 .content {
   @extend .margin-20 !optional;
+
+  p {
+    font-size: 1.4rem;
+    line-height: calc(var(--fs) * var(--golden));
+  }
+
+  h2 {
+    font-weight: 500;
+    line-height: 4rem;
+  }
 }
 
 .video-wrapper {
@@ -40,6 +50,7 @@
   display: flex;
   flex-direction: row;
   min-height: 400;
+  margin-bottom: 100px;
 
   .overview-title {
     position: relative;
@@ -54,13 +65,18 @@
   }
 
   .overview-description {
-    padding: 20px;
-    background: #f2f0e6;
     color: #353e58;
+    background: #f2f0e6;
+    padding: 20px;
 
     .overview-name {
-      margin: 0;
       font-weight: 700;
+      margin: 0;
+    }
+
+    .overview-item {
+      display: inline-block;
+      margin: 5px auto;
     }
   }
 
@@ -75,4 +91,9 @@
     font-size: 1.25rem;
     line-height: 1.7rem;
   }
+}
+
+// temp
+table, th, td {
+  border: 1px solid;
 }

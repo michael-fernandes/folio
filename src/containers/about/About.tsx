@@ -33,6 +33,10 @@ export default function About() {
               I'm inspired by finding the win-win designs that simutaneously serve the most disadvantaged
               persons while also making thing better for the rest as the population as well.
             </p>
+            <p>
+              In my freetime, you can find me, Rock Climbing, Skiing, fermenting food (my favorite is komboucha), perserving my cultural heritage
+              (primarily through food and cooking).
+            </p>
           </div>
         </div>
       </div>

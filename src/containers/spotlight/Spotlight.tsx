@@ -9,7 +9,7 @@ export default function About() {
       <p>
         I'm a technical digital designer. I am motivated by a yearning to find designs that increases the autonomy of the most vulnerable
         beneficiaries while also benefiting the rest of the user population. I have worked in some capacity of product development focusing on
-        design in <Link className="spotlight-link text-link" to="/forecast">Public Health</Link>, Sustainability and <Link className="spotlight-link text-link" to="/tongle">Civil Technology</Link>.
+        design in <Link className="spotlight-link text-link" to="/forecast">Global Health</Link>, Sustainability and <Link className="spotlight-link text-link" to="/tongle">Civil Technology</Link>.
       </p>
       <p>
         My toolkit as a designer are grounded in a human-centered design practices. I have completed sucessful projects using inclusive

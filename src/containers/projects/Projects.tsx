@@ -33,8 +33,8 @@ export const PROJECTS = [
   },
   {
     name: "COVID Model Viz",
-    discipline: "development + future looking design thinking",
-    area: "Public Health",
+    discipline: "development + design re-thinking",
+    area: "Global Health",
     description:
       "A rapidly deployed covid forecast visualizaiton tool in the first weeks of march 2020.",
     icon: CovidIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
@@ -53,7 +53,7 @@ export const PROJECTS = [
   {
     name: "Child Mortality",
     discipline: "development + design",
-    area: "Public Health",
+    area: "Global Health",
     description: "Showcasing of a website showing the ",
     icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "child-mortality",
@@ -86,7 +86,7 @@ export default function Projects({ }: Props) {
           {PROJECTS.map((p, index) => (
             <ProjectTile
               key={`project-${index}`}
-              className={`project project-${index}`}
+              className={`project tile project-${index}`}
               {...p}
             />
           ))}

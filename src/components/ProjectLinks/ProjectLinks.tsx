@@ -19,7 +19,7 @@ export default function ProjectLinks({ }: Props) {
       <div className="project-links flex center-content">
         {PROJECTS.map((d) => (
           pathname !== d.link &&
-          <div className="link">
+          <div className="link" key={d.link}>
             <Link className="nav-link" to={d.link || ''}>
               {d.shortName || d.name}
             </Link>

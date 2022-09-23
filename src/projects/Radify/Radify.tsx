@@ -43,8 +43,8 @@ export default function Radify() {
         </p>
         <p>
           This project began out of curiosity to whether or not a radial
-          line chart using a continuous time series could be communicated with
-          the public.
+          line chart using a continuous time series could be communicated to
+          a wide audience sucessfully.
         </p>
         <p>
           The website was built with multiple sources of feedback including in person,
