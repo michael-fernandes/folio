@@ -1,6 +1,7 @@
 import "./ProjectTile.scss";
 import cx from "classnames";
 import { Link } from "react-router-dom";
+import { ButtonTab } from "../../containers/ButtonTab";
 
 type Props = {
   className: string;
@@ -19,10 +20,10 @@ export default function ProjectTile({
   icon,
   link,
 }: Props) {
-  const classname = cx(className, "tile");
+  const classname = cx(className);
 
   return (
-    <div className={classname}>
+    <ButtonTab link={link || '/'} classname={classname} >
       <div className="tile-content">
         <h3 className="title project-title">{name}</h3>
         <h4 className="desc tile-discipline">{discipline}</h4>
@@ -32,6 +33,6 @@ export default function ProjectTile({
       <div className="project-icon">
         <img src={icon} alt={"Stick and dot representation of project"} />
       </div>
-    </div>
+    </ButtonTab>
   );
 }

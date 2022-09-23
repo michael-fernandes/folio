@@ -30,7 +30,18 @@ header {
   }
 
   .header-link {
-    color: 'inherit';
+    color: var(--grey);
+    text-decoration: unset;
+    font-weight: 400;
+    &:hover {
+      color: black;
+    }
+  }
+
+  .home-link {
+    text-decoration: unset;
+    // color: var(--blueish);
+    color: black;
   }
 }
 

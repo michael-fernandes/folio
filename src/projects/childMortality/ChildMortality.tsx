@@ -32,8 +32,8 @@ export default function ChildMortality() {
       {/* <img className="cover1-img" src={PictoGram} /> */}
       <div className="writeup">
         <p>
-          The annual global number of deaths of children under 5 years of age  has decrease from 19.6 million in 1950 to
-          5.4 million 2017 according to a study <a href="https://www.nature.com/articles/s41586-019-1545-0">published in Nature</a> by Insitute for Health Metrics and Evaluation. Working with
+          The annual global number of deaths of children under 5 years of age has decrease from 19.6 million a year in 1950 to
+          5.4 million 2017 a decline of nearly 72%. Working with
           colleagues at the insitute I helped design an interactive expefrience for illustrating and communicating this change to
           lay audienes across the globe. Using wireframes and later interactive prototypes, I collaborated with Quantitative Researchers for the project to
           devise a story that best communicated their research.

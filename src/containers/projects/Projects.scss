@@ -32,6 +32,7 @@ grid-template-rows:
 .project {
   background: #f2f0e6;
   // background-image: linear-gradient(135deg, #614385, #516395);
+  padding: 10px;
 }
 
 .project-0 {
@@ -64,21 +65,21 @@ grid-template-rows:
 }
 
 .project-3 {
-  grid-column-start: start;
-  grid-column-end: second;
-  grid-row-start: third;
-  grid-row-end: end;
-
-  order: 2;
-}
-
-.project-4 {
   grid-column-start: second;
   grid-column-end: end;
   grid-row-start: second;
   grid-row-end: third;
 
   order: 6;
+}
+
+.project-4 {
+  grid-column-start: start;
+  grid-column-end: second;
+  grid-row-start: third;
+  grid-row-end: end;
+
+  order: 2;
 }
 
 .project-5 {

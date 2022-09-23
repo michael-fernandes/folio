@@ -1,17 +1,26 @@
 .content {
   @extend .margin-20 !optional;
-  
-  // max-width: 800px;
 }
 
 .video-wrapper {
   aspect-ratio: 2 / 1;
 }
 
-.cover1-img {
+.fullsize-img {
   height: auto;
-  width: 100%;
+  width: 100%
+}
+
+.cover1 {
+  @extend .fullsize-img;
   aspect-ratio: 16 / 9;
+}
+
+.cover-2-img {
+  display: block;
+  width: 50%;
+  max-width: 100%;
+  display: block;
 }
 
 .cover2 {
@@ -19,10 +28,7 @@
   max-width: 100%;
 
   img {
-    display: block;
-    width: 50%;
-    max-width: 100%;
-    display: block;
+    @extend .cover-2-img;
   }
 }
 
@@ -63,7 +69,7 @@
 
 .writeup {
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto;
 
   p {
     font-size: 1.25rem;

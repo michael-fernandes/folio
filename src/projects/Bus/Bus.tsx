@@ -352,7 +352,7 @@ export default function Bus() {
                   Our experiment shows that uncertainty displays can promote rational decision making however, my
                   collaborators and I remain curious as to how people will adapt to uncertainty information in real
                   world situations.Personally, <b>I am interested in how humans can form more effective relationships
-                    in terms of trust and efficency with computer generated predictions.</b> In the future, fields such
+                    in terms of trust and efficiency with computer generated predictions.</b> In the future, fields such
                   as Medicine and Finance will transform completely from computer generated predictions and
                   understanding the relationship that exisits between predictions and humans is key to desiging more
                   effective products and achieving more effective decisions.
@@ -366,18 +366,6 @@ export default function Bus() {
         <div className="mini-section" id="section2">
           <img src="img/ubus/bus-spread-full.png" className="cover-img" data-action="zoom" />
         </div>
-
-        <hr />
-        <a href="../">
-          <div className="portfolio-back">
-            <i className="arrow left fa fa-angle-left"></i><i className="arrow left fa fa-angle-left"></i> Back to portfolio
-          </div>
-        </a>
-        <a href="cooking-aid.html">
-          <div className="portfolio-forward">
-            Lookbook <i className="arrow fa fa-angle-right"></i><i className="arrow fa fa-angle-right"></i>
-          </div>
-        </a>
       </div>
     </ContentWrapper >
   );
