@@ -16,12 +16,15 @@ export default function About() {
       <div className="about">
         <div className="overview">
           <div>
-            Picture of me, or something
+            ~~ Picture of me, or something ~~
           </div>
           <div>
             <h1>Me</h1>
-            <p>
-              (rough draft, will shift away from data). I began my career seeking to understand how humans can better use computer predictions, in ways that lead to increasingly higher qualties of research.
+            ~~ some stuff about my background and experiences, focusinng on outreach, covid modeling, komboucha brewing ~~
+            {/* probably some stuff about my background and experiences */}
+            {/* <p>
+              (rough draft, will shift away from data). I began my career seeking to understand how humans can better use computer predictions,
+              in ways that lead to increasingly higher quality decesions.
               Begining to understand the power computers incrasingly have on human decsions, from small such as when should i leave for the bus to large such as should i wear a
               surgical mass to me has led me to the belief that: a world with out inclsuive thinking about data, is one that is leads to less quality of life (placeholder).
             </p>
@@ -36,7 +39,7 @@ export default function About() {
             <p>
               In my freetime, you can find me, Rock Climbing, Skiing, fermenting food (my favorite is komboucha), perserving my cultural heritage
               (primarily through food and cooking).
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

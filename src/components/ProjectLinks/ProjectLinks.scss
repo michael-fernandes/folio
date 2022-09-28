@@ -17,29 +17,20 @@ $golden: 1.618;
   }
 
 
-  .nav-link {
+  .nav-link, .link{
     position: relative;
-    color: var(--grey);
+    color: var(--light-grey);
     text-decoration: none;
     font-weight: 500;
   }
 
-  .nav-link:after {
-    // content: '';
-    // position: absolute;
-    // width: 100%;
-    // transform: scaleX(0);
-    // height: 2px;
-    // bottom: 0;
-    // left: 0;
-    // background-color: var(--grey);
-    // transform-origin: bottom right;
-    // transition: transform 0.25s ease-out;
+  .nav-link:hover {
+    color: black;
   }
 
-  .nav-link:hover {
-    // transform: scaleX(1);
-    // transform-origin: bottom left;
-    color: black;
+  .active-link {
+    .nav-link {
+      color: black;
+    }
   }
 }

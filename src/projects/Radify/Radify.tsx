@@ -1,7 +1,7 @@
 import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/ContentWrapper";
-import CoverImg from "./Radify.png";
-import Anim from "./bananas.gif";
+import CoverImg from "./imgs/Radify.png";
+import Anim from "./imgs/bananas.gif";
 
 
 export default function Radify() {

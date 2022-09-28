@@ -43,3 +43,9 @@
     grid-row: 1/1;
   }
 }
+
+.hover-animation:hover {
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+  transform: rotate(7deg);
+}

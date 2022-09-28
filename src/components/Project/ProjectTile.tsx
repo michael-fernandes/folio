@@ -1,6 +1,5 @@
 import "./ProjectTile.scss";
 import cx from "classnames";
-import { Link } from "react-router-dom";
 import { ButtonTab } from "../../containers/ButtonTab";
 
 type Props = {
@@ -32,7 +31,7 @@ export default function ProjectTile({
         {/* {link && <Link className="project-tile-link" to={link || "/"}>View more</Link>} */}
       </div>
       <div className="project-icon">
-        <img src={icon} alt={"Stick and dot representation of project"} />
+        <img className="hover-animation" src={icon} alt={"Stick and dot representation of project"} />
       </div>
     </ButtonTab>
   );

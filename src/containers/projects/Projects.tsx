@@ -1,17 +1,16 @@
 import ProjectTile from "../../components/Project/ProjectTile";
 import "./Projects.scss";
-import RadifyIcon from "../../projects/Radify/RadifyIcon.svg";
+import RadifyIcon from "../../projects/Radify/imgs/RadifyIcon.svg";
 import BusIcon from "../../projects/Bus/BusIcon.svg";
 import TongleIcon from "../../projects/Tongle/TongleIcon.svg";
 import CovidIcon from "../../projects/covid/CovidIcon.svg";
 import ChildMortalityIcon from "../../projects/childMortality/ChildMortalityIcon.svg";
 import ContentWrapper from "../ContentWrapper";
 
-type Props = {};
 
 export const PROJECTS = [
   {
-    name: "Tongle",
+    name: "Tongle: inclusive design for civil tech",
     discipline: "design research",
     area: "Civil Tech",
     description:
@@ -21,22 +20,22 @@ export const PROJECTS = [
     weight: 4,
   },
   {
-    name: "Uncertain Displays for Decision Making",
-    shortName: "Uncertain Displays",
+    name: "Uncertainy displays for decision making",
+    shortName: "Uncertainy Displays",
     discipline: "design research + prototyping",
     area: "Academic Resaearch",
     description:
-      "Making decesion making around quantitive predictions easier for even persons unfamiliar with data decesion making.",
+      "Making decesion around quantitive predictions easier for even persons unfamiliar with data decesion making.",
     icon: BusIcon, // Dot plot...?  or a linear dot
     link: "bus",
     weight: 4,
   },
   {
-    name: "COVID Model Viz",
+    name: "COVID: vizualization for communicating risk rapid growth risk",
     discipline: "development + design re-thinking",
     area: "Global Health",
     description:
-      "A rapidly deployed covid forecast visualizaiton tool in the first weeks of march 2020.",
+      "Rapidly deployed covid forecast visualization tool, made before the pandemic began.",
     icon: CovidIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "covid",
     weight: 2,
@@ -45,16 +44,16 @@ export const PROJECTS = [
     name: "Radify",
     discipline: "data viz",
     area: "Economics",
-    description: "A continous radial representation of data.",
+    description: "Continous radial representation of data.",
     icon: RadifyIcon, //
     link: "radify",
     weight: 1,
   },
   {
-    name: "Child Mortality",
+    name: "Child Mortality: interactive storytelling for health equity",
     discipline: "development + design",
     area: "Global Health",
-    description: "Showcasing of a website showing the ",
+    description: "An interactive story about achieving health equity in under-5 child mortality. ",
     icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "child-mortality",
     weight: 1,
@@ -77,7 +76,7 @@ export const PROJECTS = [
   // },
 ];
 
-export default function Projects({ }: Props) {
+export default function Projects() {
   return (
     <ContentWrapper>
       <section id="projects">

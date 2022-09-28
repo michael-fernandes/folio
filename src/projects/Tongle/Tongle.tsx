@@ -1,28 +1,9 @@
 import ContentWrapper from '../../containers/ContentWrapper'
 
 // import GasTax from './imgs/gas_tax.jpg'
-import InContext from './imgs/in_context.jpg'
-import PdDiagram from './imgs/pd.png'
-import ProcessChart from './imgs/process_horizontal.jpg'
-import Survey from './imgs/survey.png'
 
-import storyboard1 from './imgs/storyboard1.png'
-import storyboard2 from './imgs/storyboard2.png'
-import storyboard3 from './imgs/storyboard3.png';
-
-import P1 from './imgs/p1.png'
-import P2 from './imgs/p2.png'
-import P3 from './imgs/p3.png'
-import P4 from './imgs/p4.png'
 import Tension from './imgs/tension.png';
-
-import stateFlow from './imgs/state-flow.png'
-import sitemap from './imgs/sitemap.png'
-import mediumFidelity from './imgs/medium-fidelity.png'
-import keyFlow1 from './imgs/key-flow1.png'
-import keyFlow2 from './imgs/key-flow2.png'
-import poster from './imgs/poster.png'
-
+import honorable from '../honorable.png';
 
 
 export default function Tongle() {
@@ -36,12 +17,11 @@ export default function Tongle() {
           <h4 className="overview-name">Role</h4>
           <span className="overview-item">Design Researcher</span><br /><br />
           <h4 className="overview-name">Awards</h4>
-          <span className="overview-item">Mobile Innovation Challenge: Grand Winner</span><br />
-          <span className="overview-item">Department of Human Centered Design 2017 Capstone Night: Best In Show</span><br />
-          <span className="overview-item">University of Washington (UW) Engineering Capstone Grant Winner</span><br />
+          <span className="overview-item"><img src={honorable} />Mobile Innovation Challenge | GRAND WINNER</span><br />
+          <span className="overview-item"><img src={honorable} />Department of Human Centered Design 2017 Capstone Night | BEST IN SHOW</span><br />
           <br />
           <span className="overview-summary">
-            <i>Cocreative process to design a data collecting Civil Technology that impinges on human values across the political spectrum.</i>
+            <i>A co-creative project to align a data collecting Civil Technology to the human values of the tax payers that use the technology.</i>
           </span>
         </div>
       </div>
@@ -54,9 +34,9 @@ export default function Tongle() {
       <div className="content">
         <h2>The Challenge</h2>
         <p>
-          Across <a className="text-link" href="https://www.ibtta.org/road-usage-charge-ruc">the United States</a>, a proposition has been made to use a fee porportional to the amount of miles driven on the road by each citizen to
-          pay for road and highway infrastructure.  This fee has been called a Road Usage Charge (RUC) and is a future looking tax paradigm that
-          aims to create an equitable system as gasoline cars become less common. Tasked by the Washington State Transportation Comission, I led the design research and visioning
+          Across <a className="text-link" href="https://www.ibtta.org/road-usage-charge-ruc">the United States</a>, governments are proposing a fee porportional to the amount of
+          miles driven on the road by each citizen to pay for road and highway infrastructure.  This fee has been called a Road Usage Charge (RUC) and is a future looking tax paradigm that
+          aims to create an equitable system as gasoline cars become less common. Tasked by the Washington State Transportation Commission, I led the design research and visioning
           on a team of 3 others to design a tech-based solution to collect the miles driven by citizens for a road usage charge.
         </p>
         <h2>The Strategy</h2>
@@ -75,9 +55,10 @@ export default function Tongle() {
           <img src={ProcessChart} className="cover-2-img" />
         </div> */}
         <p>
-          During the spring of 2017, I acted a a workshop designer and co-led each work shop with the product manager on the project. Each workshop followed a general pattern of generating ideas
-          and exploring the problem space, before narrowing it through a series of activities. Importantly, we made sure to continually validate assumptions about the problem, design decesions
-          and findings by presenting key findings and decesions to our participants either through some type of vote-based validation (dot-voting, survey polling).
+          During the spring of 2017, I acted a a workshop designer and co-led each work shop with the product manager on the project. As the design researcher on the project
+          I before each workshop I cam up with the co-creative activities we would do to progress the project towards a final design. Coming up with the correct activities became
+          a design challenge in itself. Coming into each workshop we selected (and imagined) activities that gained us the data points we needed to inform the next stage of design
+          development. In general, the first few activities (in workshop 1) helped understand ande define the problem while the last activities (in workshop 3) helped evaluate specific solutions.
         </p>
       </div>
       <div className="content">
@@ -110,23 +91,47 @@ export default function Tongle() {
 
         <h2>The tension</h2>
         <p className="content-exp">
-          After presenting the values to participants an interesting thing happens people started putting values at
-          opposite ends and using them as tensions. Something even more interesting happened when a participant said the
-          following.
+          In the end the driving factor in this project became the uncovering of "(human) value tensions" which began to emerge after workshp one, were validated, and used as discussion
+          tools for the rest of workshops and final design phase. We found that not only were they helpful for the core design team to understand the problem, perhaps more importantly,
+          the pariticpants were able to grasp on to them and use them for discussion amongst themselves in ways that allowed for clear conversations about the relative strength of
+          different ideas or solutions.
+        </p>
+        <p>
+          "You can't have both privacy and accuracy. You can only have one or the other. But not
+          privacy and accuracy–Okay?"
+        </p>
+        <p>
+          "For me, my most important value is accuracy, I can't imagine.... however for [names another participant] there
+          most imporatant value is privacy, and finding something that works for both of us seems hard."
+        </p>
+        <p>
+          "."
         </p>
       </div>
       <div className="cover2-img">
         <img src={Tension} className="cover-2-img" />
       </div>
-
-
+      <div>
+        <h2>Final Solution</h2>
+        <p>
+          After the participatory part of the project was done, I took on more of a support roll, assisting the two designers
+          on our team make decesions and arrive at a final suggestion. The research generated through our particiaptory process, really
+          spoke for itself. A design didn't just emerge, but, when we found arrived at the final one, it fit right into the value tensions.
+        </p>
+        <p>
+          In the end, we ended up doing research through design. While I'm prepared to offer defense on why our design works for the broadest
+          range of citizens, I think more interstingly it lent evidence (and a framework) that a smart-phone only solution would not work in isolation.
+          Our pairing of a physical device that tracked miles when privacy is needed and a smart phone when accuracy is needed allowed for flexible
+          use of the system. Letting users get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
+        </p>
+      </div>
       <div className="content">
         <h2>Reflection</h2>
         <p className="quote">
-          By creating a design that allowed those who wanted complete privacy in their location data, Tongle also benefits a range of people.
-          It allows employees to charge their employers on trips taken for company work, it allows a teenager to sneak off to their first concert,
-          or a husband to surprise his wife with an unexpected birthday present. By creating an app that allows for flexible use, the user acceptance of the app
-          was increased and thereby a better experience was created overall.
+          In the end, by focusing on human values (via the value sensitive design framework), we were able to increase end-user acceptance,
+          of the final proposed solution. Using co-creation helped uncover what types of values were embded in the design challenge, and then bringing
+          these values to the forefront of the co-creation was vital for the sucess of the project. The TLDR: Combining Value sensitive design with a participatory method
+          can help drive the project towards a particpatory and inclusive result.
         </p>
       </div>
     </ContentWrapper >

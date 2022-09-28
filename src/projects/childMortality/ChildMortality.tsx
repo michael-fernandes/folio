@@ -28,15 +28,20 @@ export default function ChildMortality() {
           </span>
         </div>
       </div>
-      <img src={PictoAnim} className="cover1-img" />
-      {/* <img className="cover1-img" src={PictoGram} /> */}
+      <img src={PictoAnim} className="fullsize-img " />
+      {/* <img className="cover-1-img-img" src={PictoGram} /> */}
       <div className="writeup">
+        <h2>About the project</h2>
         <p>
           The annual global number of deaths of children under 5 years of age has decrease from 19.6 million a year in 1950 to
-          5.4 million 2017 a decline of nearly 72%. Working with
-          colleagues at the insitute I helped design an interactive expefrience for illustrating and communicating this change to
-          lay audienes across the globe. Using wireframes and later interactive prototypes, I collaborated with Quantitative Researchers for the project to
-          devise a story that best communicated their research.
+          5.4 million 2017 a decline of nearly 72%. Still there exists much progress to make to lower under 5 mortality close to
+          zero. Some regions are progressing much faster than others, evening the spread of change could lower the number, saving
+          millions more  lives.
+        </p>
+        <p>
+          Working with colleagues at the insitute I helped create an interactive expefrience for illustrating and communicating this change to
+          lay audienes across the globe. I used wireframes and later interactive prototypes to collaborate with Quantitative Researchers for the project to
+          craft an interactive story that they felt accurately communicated their research.
         </p>
       </div>
       <div className="cover2">

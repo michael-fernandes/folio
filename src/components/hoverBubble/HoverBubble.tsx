@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import { SyntheticEvent, useEffect, useMemo, useRef } from "react";
+import { useMeasure } from "react-use";
 import "./HoverBubble.scss";
 
 interface ForceNode {
@@ -13,19 +14,19 @@ interface ForceNode {
 }
 
 // const tableauColors = d3.scaleOrdinal(d3.range(numNodes), ['transparent'].concat(d3.schemeTableau10));
-// Easy way to add space
 const gradient = d3.interpolateCool;
+const PAGE_PADDING_X = 20 * 2;
 
 // Ported from: https://observablehq.com/@d3/collision-detection/2
 export default function HoverBubble({ }) {
   const isSmallerScreen = window.innerWidth < 500;
-  const width = isSmallerScreen ? window.innerWidth * 2 : 1000;
+  const width = isSmallerScreen ? (window.innerWidth - PAGE_PADDING_X) * 2 : 1000;
   const height = width;
   const radius = isSmallerScreen ? 3 : 4;
   const forceHat = isSmallerScreen ? 0.001 : 0.0023;
   const numNodes = isSmallerScreen ? 150 : 200;
   const ref = useRef(null);
-
+  console.log(width);
   const nodes = useMemo(
     (): ForceNode[] =>
       d3.range(numNodes).map((n: number) => ({
@@ -104,7 +105,7 @@ export default function HoverBubble({ }) {
           .on("touchmove", (event: SyntheticEvent) => event.preventDefault())
           .on("pointermove", pointed);
       }
-
+      console.log('sizing');
       return () => simulation.stop();
     }
   }, [ref, window.innerWidth]);

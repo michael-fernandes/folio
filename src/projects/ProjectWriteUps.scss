@@ -21,8 +21,9 @@
   width: 100%
 }
 
-.cover1 {
+.cover-1-img {
   @extend .fullsize-img;
+
   aspect-ratio: 16 / 9;
 }
 
@@ -44,13 +45,23 @@
 
 .overview > * {
   width: 50%;
+
+  img {
+    height: 17px;
+    position: relative;
+    top: 2px;
+  }
 }
 
 .overview {
   display: flex;
   flex-direction: row;
   min-height: 400;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+
+  .award {
+    height: 0.75rem;
+  }
 
   .overview-title {
     position: relative;
@@ -67,7 +78,7 @@
   .overview-description {
     color: #353e58;
     background: #f2f0e6;
-    padding: 20px;
+    padding: 15px;
 
     .overview-name {
       font-weight: 700;
@@ -76,7 +87,7 @@
 
     .overview-item {
       display: inline-block;
-      margin: 5px auto;
+      margin: 2px auto;
     }
   }
 
@@ -92,6 +103,7 @@
     line-height: 1.7rem;
   }
 }
+
 
 // temp
 table, th, td {

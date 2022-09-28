@@ -9,6 +9,7 @@ type Props = {}
 
 export default function ProjectLinks({ }: Props) {
   const { pathname } = useLocation();
+  console.log(pathname)
   return (
     <ContentWrapper>
       {/* <ul className="project-links flex center-content">
@@ -18,12 +19,11 @@ export default function ProjectLinks({ }: Props) {
       </ul> */}
       <div className="project-links flex center-content">
         {PROJECTS.map((d) => (
-          pathname !== d.link &&
-          <div className="link" key={d.link}>
+          <div className={pathname === '/' + d.link ? "link active-link" : 'link'} key={d.link}>
             <Link className="nav-link" to={d.link || ''}>
               {d.shortName || d.name}
             </Link>
-            <span>&#8212;</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
           </div>
         ))}
         <div className="link"><Link className="nav-link" to="/">Home</Link></div>
