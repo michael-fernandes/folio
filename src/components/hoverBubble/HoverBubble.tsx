@@ -1,6 +1,5 @@
 import * as d3 from "d3";
 import { SyntheticEvent, useEffect, useMemo, useRef } from "react";
-import { useMeasure } from "react-use";
 import "./HoverBubble.scss";
 
 interface ForceNode {

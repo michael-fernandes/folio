@@ -111,7 +111,7 @@ export default function Tongle() {
       <div className="cover2-img">
         <img src={Tension} className="cover-2-img" />
       </div>
-      <div>
+      <div className="content">
         <h2>Final Solution</h2>
         <p>
           After the participatory part of the project was done, I took on more of a support roll, assisting the two designers

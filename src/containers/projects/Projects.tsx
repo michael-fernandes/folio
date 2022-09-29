@@ -11,6 +11,7 @@ import ContentWrapper from "../ContentWrapper";
 export const PROJECTS = [
   {
     name: "Tongle: inclusive design for civil tech",
+    shortName: "Tongle",
     discipline: "design research",
     area: "Civil Tech",
     description:
@@ -32,6 +33,7 @@ export const PROJECTS = [
   },
   {
     name: "COVID: vizualization for communicating risk rapid growth risk",
+    shortName: "Covid risk",
     discipline: "development + design re-thinking",
     area: "Global Health",
     description:
@@ -51,6 +53,7 @@ export const PROJECTS = [
   },
   {
     name: "Child Mortality: interactive storytelling for health equity",
+    shortName: "Child Mortality",
     discipline: "development + design",
     area: "Global Health",
     description: "An interactive story about achieving health equity in under-5 child mortality. ",

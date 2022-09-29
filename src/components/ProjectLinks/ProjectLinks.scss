@@ -25,6 +25,7 @@ $golden: 1.618;
   }
 
   .nav-link:hover {
+    transition: 500ms;
     color: black;
   }
 

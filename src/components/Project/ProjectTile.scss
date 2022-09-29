@@ -12,13 +12,24 @@
   }
 
   .tile-discipline {
-    font-size: 0.8rem;
     font-style: italic;
     font-weight: 500;
   }
 
+  p, .tile-discipline {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
   img {
     width: 100%;
+  }
+
+  button {
+    background: unset;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 4px;
   }
 }
 

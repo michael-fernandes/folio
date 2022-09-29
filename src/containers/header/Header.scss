@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 20px 0;
 
   .header-heading {
     font-size: 1.25rem;
@@ -32,8 +32,9 @@ header {
   .header-link {
     color: var(--grey);
     text-decoration: unset;
-    font-weight: 400;
+    font-weight: 500;
     &:hover {
+      transition: 500ms;
       color: black;
     }
   }

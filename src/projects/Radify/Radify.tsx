@@ -9,6 +9,7 @@ export default function Radify() {
     <ContentWrapper>
       <div className="overview container">
         <div className="overview-title">
+          <h1>Information Viz</h1>
           <h1>Radify: A spiraling line chart</h1>
           <div className="overview-button-container">
             <p>
