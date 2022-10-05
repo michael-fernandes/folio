@@ -8,9 +8,8 @@ export default function About() {
     <ContentWrapper classWrapper="background-wrapper">
       <p>
         I'm a technical digital designer with experience in <Link className="spotlight-link text-link" to="/forecast">Global Health</Link>,
-        <Link className="spotlight-link text-link" to="/tongle">Civil Tech</Link>, and Sustainability. My toolkit as a designer are grounded in a
-        human-centered design practices, completing successful projects using inclusive design techniques that use co-creation to drive a design
-        towards the human-values embedded in a technical system.
+        {" "}<Link className="spotlight-link text-link" to="/tongle">Civil Tech</Link>, and Sustainability. My toolkit as a designer is grounded in
+        human-centered design practices some of my favorites are value-sensitive design, co-creation, and mixed-methods research.
       </p>
       <p>
         Increasingly, I am interested in the social implications of intelligence augmentation of predictive

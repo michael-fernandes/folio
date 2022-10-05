@@ -2,7 +2,7 @@ import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/ContentWrapper";
 import CoverImg from "./imgs/Radify.png";
 import Anim from "./imgs/bananas.gif";
-
+import honorable from '../honorable.png';
 
 export default function Radify() {
   return (
@@ -20,6 +20,7 @@ export default function Radify() {
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
           <span className="overview-item">Development</span><br /><br />
+          <span className="overview-item"><img src={honorable} /><span>Long List for 2022 Information is Beautiful Awards: Current Affair & Politics</span></span><br />
 
           <span className="overview-summary">
             <i>A circular representation of a continuous timeseries that represents a spiral out of control.</i>

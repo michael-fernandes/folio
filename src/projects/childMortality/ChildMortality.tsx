@@ -5,6 +5,7 @@ import ContentWrapper from "../../containers/ContentWrapper";
 import PictoAnim from './pictoanim.gif';
 import Line from './Line.png';
 import MapImg from './Map.png';
+import honorable from '../honorable.png';
 
 
 export default function ChildMortality() {
@@ -22,6 +23,7 @@ export default function ChildMortality() {
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
           <span className="overview-item">Development + Design</span><br /><br />
+          <span className="overview-item"><img src={honorable} /><span>Long List for 2022 Information is Beautiful Awards: Scient Technology & Health</span></span><br />
 
           <span className="overview-summary">
             <i>Am interactive experience telling the story of how premature child mortality in lower-middle income countries has decreased over the last 30 years.</i>

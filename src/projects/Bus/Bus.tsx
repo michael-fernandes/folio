@@ -2,6 +2,10 @@
 import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/ContentWrapper";
 import honorable from '../honorable.png';
+
+import BusInContext from './imgs/bus_in_context.png';
+import Dot20 from './imgs/viz/dot20.png';
+
 export default function Bus() {
   return (
     <ContentWrapper>
@@ -21,13 +25,13 @@ export default function Bus() {
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
-          <span className="overview-item">Research assistant</span><br /><br />
+          <span className="overview-item">Research assistant</span><br />
 
           <h4 className="overview-name">Awards</h4>
-          <span className="overview-item"><img src={honorable} />ACM  Human Factors in Computing Systems (CHI) 2018 | BEST PAPER HONORABLE MENTION (Top %5)</span><br /><br />
+          <span className="overview-item"><img src={honorable} />ACM  Human Factors in Computing Systems (CHI) 2018 | BEST PAPER HONORABLE MENTION (Top %5)</span><br />
 
           <h4 className="overview-name">Team</h4>
-          <span className="overview-item">Two Research Assistants and Three Directing Professors</span><br /><br />
+          <span className="overview-item">Two Research Assistants and Three Directing Professors</span><br />
           <span className="overview-summary">
             <i>Mixed methods research examining how people can better use computer generated predictions to
               make on the go decesions.</i>
@@ -42,10 +46,6 @@ export default function Bus() {
           <iframe width="100%" height="400" src="https://www.youtube.com/embed/imD4P8xqCEI" frameBorder="0"
             allowFullScreen={true} className="mb4" />
         </div>
-      </div>
-
-      <div className="mini-section animate" id="section2">
-        <img src="img/ubus/bus_in_context.png" className="cover-img" data-action="zoom" />
       </div>
       <div className="content">
         <h2>The challenge</h2>
@@ -76,7 +76,7 @@ export default function Bus() {
           <h2>Results</h2>
           <div className="flex-wrapper">
             <div className="flex-padding half-width">
-              <img src="img/ubus/dot20.png" className="half-width" data-action="zoom" />
+              <img src={Dot20} className="half-width" data-action="zoom" />
             </div>
             <div className="flex-padding half-width">
               <p className='content-exp'>
@@ -94,6 +94,9 @@ export default function Bus() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mini-section animate" id="section2">
+        <img src={BusInContext} className="cover-1-img" data-action="zoom" />
       </div>
     </ContentWrapper >
   );

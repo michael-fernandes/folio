@@ -6,7 +6,7 @@ import Projects from "./containers/projects/Projects";
 import Spotlight from "./containers/spotlight/Spotlight";
 import Header from "./containers/header/Header";
 import About from "./containers/about/About";
-import ProjectLinks from "./components/ProjectLinks/ProjectLinks";
+import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop";
 
 import Bus from "./projects/Bus/Bus";
@@ -46,8 +46,7 @@ function App() {
 
           <Route path="about" element={<About />} />
         </Routes>
-        {pathname !== '/' && <ProjectLinks />}
-        <Header isBottom />
+        {pathname !== '/' && <Footer />}
         {/* fun? */}
       </main>
     </ScrollToTop>

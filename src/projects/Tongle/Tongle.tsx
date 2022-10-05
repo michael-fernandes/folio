@@ -2,9 +2,12 @@ import ContentWrapper from '../../containers/ContentWrapper'
 
 // import GasTax from './imgs/gas_tax.jpg'
 
-import Tension from './imgs/tension.png';
 import honorable from '../honorable.png';
-
+import Flow2 from './imgs/key-flow2.png';
+import Flow1 from './imgs/key-flow1.png';
+import Tensions from './Tensions';
+import PDSetup from './imgs/pd.png';
+// import InContext from './imgs/in_context.jpg';
 
 export default function Tongle() {
   return (
@@ -15,10 +18,10 @@ export default function Tongle() {
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
-          <span className="overview-item">Design Researcher</span><br /><br />
+          <span className="overview-item">Design Researcher</span><br />
           <h4 className="overview-name">Awards</h4>
-          <span className="overview-item"><img src={honorable} />Mobile Innovation Challenge | GRAND WINNER</span><br />
-          <span className="overview-item"><img src={honorable} />Department of Human Centered Design 2017 Capstone Night | BEST IN SHOW</span><br />
+          <span className="overview-item"><img src={honorable} />Mobile Innovation Challenge | Grand Winner</span><br />
+          <span className="overview-item"><img src={honorable} />Department of Human Centered Design 2017 Capstone Showcase | Best in show</span>
           <br />
           <span className="overview-summary">
             <i>A co-creative project to align a data collecting Civil Technology to the human values of the tax payers that use the technology.</i>
@@ -48,6 +51,9 @@ export default function Tongle() {
           As a team we choose a process that used 3 co-creation workshops, and luckily so because the cocreation workshops revealed more
           problems with potential designs than was intially apparent.
         </p>
+        <div className="flex center-content margin-20">
+          <img src={PDSetup} alt="A diagram showing a designer and and end-users contributing to design ideas." className="cover-2-img" />
+        </div>
       </div>
       <div className="content">
         <h2>Design Workshops</h2>
@@ -55,37 +61,47 @@ export default function Tongle() {
           <img src={ProcessChart} className="cover-2-img" />
         </div> */}
         <p>
-          During the spring of 2017, I acted a a workshop designer and co-led each work shop with the product manager on the project. As the design researcher on the project
-          I before each workshop I cam up with the co-creative activities we would do to progress the project towards a final design. Coming up with the correct activities became
-          a design challenge in itself. Coming into each workshop we selected (and imagined) activities that gained us the data points we needed to inform the next stage of design
-          development. In general, the first few activities (in workshop 1) helped understand ande define the problem while the last activities (in workshop 3) helped evaluate specific solutions.
+          As the design researcher on the project before each workshop I would design  a workshop protocol based on where we were in the design process. In some workshops we expaned
+          ideas and in others we refined, validated and tried to break ideas. Coming up with the correct activities became a design challenge in itself. Coming into each workshop my team and I
+          (with the aid ofan awesome advisor, Jon Porter) selected or imagined activities that gained us the data points we needed to inform the next stage of design development.
+          While we did not know how each workshop would look until the week before the general strategy i devised moved the project down the ideaetion funnel from a broad
+          exploration of ideas to a refined idea.
         </p>
       </div>
       <div className="content">
         <table>
           <tr>
             <th></th>
-            <th>Activities</th>
-            <th>Result</th>
-            <th>Key Findings</th>
+            <th>Design Activities</th>
+            <th>Result / Findings</th>
+            {/* <th>After workshop acitivies</th> */}
           </tr>
           <tr>
             <td>Workshop #1</td>
-            <td>Card Brainstorming, etc.</td>
-            <td>A wide range of data</td>
-            <td>This is going to be harder than we think</td>
+            <td>
+              <ul>
+                <li>Negative idea brainstorming</li>
+                <li>Likes, dislikes and wishes</li>
+              </ul>
+            </td>
+            <td>Affinity diagraming of "data" from workshop 1, survey for participants to evaluate affinity groupings</td>
           </tr>
           <tr>
             <td>Workshop #2</td>
-            <td>This won't scale</td>
-            <td>for mobile</td>
-            <td>so i will make in Adobe</td>
+            <td><ul>
+              <li>Validate values</li>
+              <li>Silent dot voting on promising ideas (in the form of storyboards) from Workshop #1</li>
+              <li>Design charette in small groups</li>
+            </ul> </td>
+            <td>Supporting evidence of what values exsist in what ideas</td>
           </tr>
           <tr>
             <td>Workshop #3</td>
-            <td>This won't scale</td>
-            <td>for mobile</td>
-            <td>so i will make in Adobe</td>
+            <td><ul>
+              <li>Design Court for 3 medium fidelity prototypes</li>
+              <li>Hopes and dreams</li>
+            </ul></td>
+            <td>In depth review of design ideas</td>
           </tr>
         </table>
 
@@ -104,13 +120,8 @@ export default function Tongle() {
           "For me, my most important value is accuracy, I can't imagine.... however for [names another participant] there
           most imporatant value is privacy, and finding something that works for both of us seems hard."
         </p>
-        <p>
-          "."
-        </p>
       </div>
-      <div className="cover2-img">
-        <img src={Tension} className="cover-2-img" />
-      </div>
+      <Tensions />
       <div className="content">
         <h2>Final Solution</h2>
         <p>
@@ -125,13 +136,18 @@ export default function Tongle() {
           use of the system. Letting users get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
         </p>
       </div>
+      <div>
+        <img src={Flow1} className="cover-1-img" />
+        <img src={Flow2} className="cover-1-img scale-75" />
+      </div>
       <div className="content">
         <h2>Reflection</h2>
-        <p className="quote">
-          In the end, by focusing on human values (via the value sensitive design framework), we were able to increase end-user acceptance,
+        <p>
+          By focusing on human-values(via a value sensitive design framework), we were able to increase end-user acceptance
           of the final proposed solution. Using co-creation helped uncover what types of values were embded in the design challenge, and then bringing
-          these values to the forefront of the co-creation was vital for the sucess of the project. The TLDR: Combining Value sensitive design with a participatory method
-          can help drive the project towards a particpatory and inclusive result.
+          these values to the forefront of the co-creation was vital for the sucess of the project. Further the slow unwinding of the design challenge
+          that happened during the sequential workshops allowed for both the participants and design leaders to slowly digest the nuisances of the problem and
+          avoid gut reactions.
         </p>
       </div>
     </ContentWrapper >

@@ -37,7 +37,7 @@ export const PROJECTS = [
     discipline: "development + design re-thinking",
     area: "Global Health",
     description:
-      "Rapidly deployed covid forecast visualization tool, made before the pandemic began.",
+      "Rapidly deployed covid forecast visualization tool, and a retroactive look at the alignment between public health and the public.",
     icon: CovidIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "covid",
     weight: 2,
@@ -56,7 +56,7 @@ export const PROJECTS = [
     shortName: "Child Mortality",
     discipline: "development + design",
     area: "Global Health",
-    description: "An interactive story about achieving health equity in under-5 child mortality. ",
+    description: "An interactive story about achieving global health equity in under-5 child mortality.",
     icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "child-mortality",
     weight: 1,
