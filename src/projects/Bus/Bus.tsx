@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import ActionLink from "../../components/link/ActionLink";
-import ContentWrapper from "../../containers/ContentWrapper";
+import ContentWrapper from "../../containers/layout/ContentWrapper";
+import WriteupWrapper from "../../containers/layout/WriteupWrapper";
 import honorable from '../honorable.png';
 
 import BusInContext from './imgs/bus_in_context.png';
@@ -47,54 +48,55 @@ export default function Bus() {
             allowFullScreen={true} className="mb4" />
         </div>
       </div>
-      <div className="content">
-        <h2>The challenge</h2>
-        <p>
-          Typically, displays lay-user displays present computer generated quantitative predictions in point form (weather forecasts, duration of your commute each day),
-          compltely ignoring any uncertainty in them. Presenting a display with uncertainty integrated into the UI comes with, well, uncertainty.
-          Figuring a way to communicate uncertainty in predictions, especially to lay audiences, comes with the problem that its unclear which encoding to use,
-          and even if an uncertainty encoding will lead to better decesion making. The research and prototyping done here attempts to clearly establish
-          how to present uncertainty in glancable interfaces to lead to the most optimal decesions possible.
-        </p>
-      </div>
-      <div className="content">
-        <h2>Strategy</h2>
-        <p>
-          The primary task in this proejct, was to design an integrated display that shows users bus arrival times with uncertainty i
-          Before the start of this phase of the project, mixed-methods research had been carried out (and published to CHI 2016) to research the design space for persenting uncertainty in the
-          context of bus arrival times. Using the previous work to inform the design we used an iterative design process that included rapid prototyping and progressive usability tests until
-          a successful design was found.
-        </p>
-        <p>
-          Borrowing from Economics literature, I conducted a Variable Reward experimental design to measure the effectiveness of decesions made on a range of different
-          representations. The experiment ran at an n=1200 level with 180-200 individuals in each experimental group.
-        </p>
-      </div>
-
-      <div className='content'>
-        <div>
-          <h2>Results</h2>
-          <div className="flex-wrapper">
-            <div className="flex-padding half-width">
-              <img src={Dot20} className="half-width" data-action="zoom" />
-            </div>
-            <div className="flex-padding half-width">
-              <p className='content-exp'>
-                In the end, showing more information (beyond a point estimate), led to better decesions. Textual representations performed worse than visual encodings, while
-                probability density curves and dot plots led to the most optimal decesions. Perhaps most importantly, this increase in decesion quality held true for opeople no
-                matter their general Education level and specific statstical with quantitative reasoning. Lending evidence that representing uncertainty might benefit
-                even common predictions tools like trip planners, weather forecasts etc.
-              </p>
-              <p>
-                Although this work shows better decesions are possible, this might not hold true in the real world. After this research I have been left curious
-                about how the relation between predictive tools and humans might exsist. Will the introduction of uncertainty push the onus of blame for missing
-                a bus from the app back on to the individual? Will people become more risk taking or conservative over time? These are all questions that
-                need to be investigated, espeically as predicative tools become more wide spread.
-              </p>
+      <WriteupWrapper links={["nada"]}>
+        <div className="content">
+          <h2>The challenge</h2>
+          <p>
+            Typically, displays lay-user displays present computer generated quantitative predictions in point form (weather forecasts, duration of your commute each day),
+            compltely ignoring any uncertainty in them. Presenting a display with uncertainty integrated into the UI comes with, well, uncertainty.
+            Figuring a way to communicate uncertainty in predictions, especially to lay audiences, comes with the problem that its unclear which encoding to use,
+            and even if an uncertainty encoding will lead to better decesion making. The research and prototyping done here attempts to clearly establish
+            how to present uncertainty in glancable interfaces to lead to the most optimal decesions possible.
+          </p>
+        </div>
+        <div className="content">
+          <h2>Strategy</h2>
+          <p>
+            The primary task in this proejct, was to design an integrated display that shows users bus arrival times with uncertainty i
+            Before the start of this phase of the project, mixed-methods research had been carried out (and published to CHI 2016) to research the design space for persenting uncertainty in the
+            context of bus arrival times. Using the previous work to inform the design we used an iterative design process that included rapid prototyping and progressive usability tests until
+            a successful design was found.
+          </p>
+          <p>
+            Borrowing from Economics literature, I conducted a Variable Reward experimental design to measure the effectiveness of decesions made on a range of different
+            representations. The experiment ran at an n=1200 level with 180-200 individuals in each experimental group.
+          </p>
+        </div>
+        <div className='content'>
+          <div>
+            <h2>Results</h2>
+            <div className="flex-wrapper">
+              <div className="flex-padding half-width">
+                <img src={Dot20} className="half-width" data-action="zoom" />
+              </div>
+              <div className="flex-padding half-width">
+                <p className='content-exp'>
+                  In the end, showing more information (beyond a point estimate), led to better decesions. Textual representations performed worse than visual encodings, while
+                  probability density curves and dot plots led to the most optimal decesions. Perhaps most importantly, this increase in decesion quality held true for opeople no
+                  matter their general Education level and specific statstical with quantitative reasoning. Lending evidence that representing uncertainty might benefit
+                  even common predictions tools like trip planners, weather forecasts etc.
+                </p>
+                <p>
+                  Although this work shows better decesions are possible, this might not hold true in the real world. After this research I have been left curious
+                  about how the relation between predictive tools and humans might exsist. Will the introduction of uncertainty push the onus of blame for missing
+                  a bus from the app back on to the individual? Will people become more risk taking or conservative over time? These are all questions that
+                  need to be investigated, espeically as predicative tools become more wide spread.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </WriteupWrapper>
       <div className="mini-section animate" id="section2">
         <img src={BusInContext} className="cover-1-img" data-action="zoom" />
       </div>

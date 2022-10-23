@@ -5,7 +5,7 @@ import BusIcon from "../../projects/Bus/BusIcon.svg";
 import TongleIcon from "../../projects/Tongle/TongleIcon.svg";
 import CovidIcon from "../../projects/covid/CovidIcon.svg";
 import ChildMortalityIcon from "../../projects/childMortality/ChildMortalityIcon.svg";
-import ContentWrapper from "../ContentWrapper";
+import ContentWrapper from "../layout/ContentWrapper";
 
 
 export const PROJECTS = [
@@ -21,7 +21,7 @@ export const PROJECTS = [
     weight: 4,
   },
   {
-    name: "Uncertainy displays for decision making",
+    name: "Uncertainty displays for on the go decision making",
     shortName: "Uncertainy Displays",
     discipline: "design research + prototyping",
     area: "Academic Resaearch",

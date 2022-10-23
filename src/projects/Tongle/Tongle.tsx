@@ -1,4 +1,4 @@
-import ContentWrapper from '../../containers/ContentWrapper'
+import ContentWrapper from '../../containers/layout/ContentWrapper'
 
 // import GasTax from './imgs/gas_tax.jpg'
 

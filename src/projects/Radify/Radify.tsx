@@ -1,5 +1,5 @@
 import ActionLink from "../../components/link/ActionLink";
-import ContentWrapper from "../../containers/ContentWrapper";
+import ContentWrapper from "../../containers/layout/ContentWrapper";
 import CoverImg from "./imgs/Radify.png";
 import Anim from "./imgs/bananas.gif";
 import honorable from '../honorable.png';

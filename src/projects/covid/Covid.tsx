@@ -1,5 +1,5 @@
 import ActionLink from '../../components/link/ActionLink';
-import ContentWrapper from '../../containers/ContentWrapper';
+import ContentWrapper from '../../containers/layout/ContentWrapper';
 import WhiteHouse from './WhiteHouse.png';
 
 type Props = {}
