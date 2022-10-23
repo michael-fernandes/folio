@@ -3,7 +3,9 @@ $golden: 1.618;
 
 .project-link-wrapper {
   background: #2d3b62;
+  margin-top: 50px;
 
+  padding: 60px 0px 100px 0px;
   .project-links {
      li {
       display: inline-block;
@@ -13,7 +15,7 @@ $golden: 1.618;
     overflow: auto;
     flex-wrap: wrap;
     max-width: 700px;
-    margin: 100px auto;
+    margin: auto;
   
     .link {  
       font-size: $fs; 
@@ -23,7 +25,7 @@ $golden: 1.618;
   
     .nav-link, .link{
       position: relative;
-      color: var(--light-grey);
+      color: white;
       text-decoration: none;
       font-weight: 500;
     }
@@ -36,7 +38,7 @@ $golden: 1.618;
   
     .active-link {
       .nav-link {
-        color: #ff0d47;
+        color: var(--light-grey);
       }
     }
   }

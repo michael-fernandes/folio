@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import ContentWrapper from '../../containers/ContentWrapper';
 import Header from '../../containers/header/Header';
 import { PROJECTS } from '../../containers/projects/Projects';
 import './Footer.scss';
@@ -29,8 +28,8 @@ export default function Footer({ }: Props) {
             </div>
           ))}
           <div className="link"><Link className="nav-link" to="/">Home</Link></div>
+          <Header isBottom />
         </div>
-        <Header />
       </div>
     </ >
   )
