@@ -28,22 +28,22 @@ header {
       padding: 0px 5px;
     }
   }
+}
 
-  .header-link {
-    color: var(--grey);
-    text-decoration: unset;
-    font-weight: 500;
-    &:hover {
-      transition: 500ms;
-      color: black;
-    }
+.header-link {
+  color: var(--grey);
+  text-decoration: unset;
+  font-weight: 500;
+  &:hover {
+    transition: 500ms;
+    color: black;
   }
+}
 
-  .home-link {
-    text-decoration: unset;
-    // color: var(--blueish);
-    color: var(--black);
-  }
+.home-link {
+  text-decoration: unset;
+  // color: var(--blueish);
+  color: var(--black);
 }
 
 .header-bottom {
@@ -51,4 +51,12 @@ header {
   bottom: 0px;
   width: 100%;
   color: white;
+
+ .home-link {
+    color: white;
+  }
+  
+  .header-link {
+    color: white;
+  }
 }

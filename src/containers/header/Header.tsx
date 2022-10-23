@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import ContentWrapper from '../ContentWrapper';
+import ContentWrapper from '../layout/ContentWrapper';
 import './Header.scss';
 
 interface Props {

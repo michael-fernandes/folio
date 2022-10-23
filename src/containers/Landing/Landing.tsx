@@ -1,5 +1,5 @@
 import HoverBubble from "../../components/hoverBubble/HoverBubble";
-import ContentWrapper from "../ContentWrapper";
+import ContentWrapper from "../layout/ContentWrapper";
 import "./Landing.scss";
 type Props = {};
 
@@ -12,11 +12,16 @@ export default function Landing({ }: Props) {
           {/* <h1 className="title">
             Exploring the affect of data upon design from all directions.
           </h1> */}
-          <h1>
-            {/* Envisioning, a more balanced future where the most disadvantaged benefit. */}
-            {/*  what is the value */}
-            Inclusive design for a data driven world.
-          </h1>
+          <div className="hero-text">
+            <h1 className="hero-text-p1">
+              {/* Envisioning, a more balanced future where the most disadvantaged benefit. */}
+              {/*  what is the value */}
+              Orienting designs
+            </h1>
+            <h1 className="hero-text-p2">
+              to what matters.
+            </h1>
+          </div>
           <h2 className="subtitle">Designer • Developer • Human-Computer Interaction</h2>
         </div>
         <HoverBubble />

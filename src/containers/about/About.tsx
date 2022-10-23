@@ -1,4 +1,4 @@
-import ContentWrapper from '../ContentWrapper'
+import ContentWrapper from '../layout/ContentWrapper'
 import './About.scss';
 
 {/* <p>
