@@ -16,10 +16,10 @@ export default function Landing({ }: Props) {
             <h1 className="hero-text-p1">
               {/* Envisioning, a more balanced future where the most disadvantaged benefit. */}
               {/*  what is the value */}
-              Orienting designs
+              Aligning design
             </h1>
             <h1 className="hero-text-p2">
-              to what matters.
+              with what matters.
             </h1>
           </div>
           <h2 className="subtitle">Designer • Developer • Human-Computer Interaction</h2>
