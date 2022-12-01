@@ -1,4 +1,3 @@
-// import { Link } from "react-router-dom";
 import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/layout/ContentWrapper";
 import WriteupWrapper from "../../containers/layout/WriteupWrapper";

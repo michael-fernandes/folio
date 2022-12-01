@@ -36,12 +36,13 @@ grid-template-rows:
   padding: 10px;
   text-decoration: unset;
   color: black;
+  color: rgb(80, 80, 80);
 }
 
 .project-0 {
-  background:
   // linear-gradient(#fff,#fff) padding-box,
-  linear-gradient(180deg, #daffe0 1%, white 23%,  white) border-box;
+  // linear-gradient(180deg, #daffe0 1%, white 23%,  white) border-box;
+  background: #daffe0;
   grid-column-start: start;
   grid-column-end: second;
   grid-row-start: start;
@@ -50,8 +51,8 @@ grid-template-rows:
 }
 
 .project-1 {
-  background: linear-gradient(180deg, #F2FAFF 1%, white 23%,  white) border-box;
-  ;
+  // background: linear-gradient(180deg, #F2FAFF 1%, white 23%,  white) border-box;
+  background: #F2FAFF;
   grid-column-start: second;
   grid-column-end: end;
   grid-row-start: start;
@@ -70,7 +71,8 @@ grid-template-rows:
 }
 
 .project-3 {
-  background: linear-gradient(180deg, #FFFBF2 1%, white 23%,  white) border-box;
+  // background: linear-gradient(180deg, #FFFBF2 1%, white 23%,  white) border-box;
+  background: #FFFBF2;
   grid-column-start: second;
   grid-column-end: end;
   grid-row-start: second;
@@ -80,7 +82,8 @@ grid-template-rows:
 }
 
 .project-4 {
-  background: linear-gradient(180deg, #FFF2FA 1%, white 23%,  whiten) border-box;
+  // background: linear-gradient(180deg, #FFF2FA 1%, white 23%,  whiten) border-box;
+  background: #FFF2FA;
   grid-column-start: start;
   grid-column-end: second;
   grid-row-start: third;
