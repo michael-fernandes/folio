@@ -16,7 +16,7 @@ interface ForceNode {
 const gradient = d3.interpolateCool;
 const PAGE_PADDING_X = 20 * 2;
 
-// Ported from: https://observablehq.com/@d3/collision-detection/2
+// Ported from: https://observablehq.com/@d3/collision-detectiStrategy Insights and Planning Consultanton/2
 export default function HoverBubble({ showDots }: { showDots: boolean }) {
   const isSmallerScreen = window.innerWidth < 500;
 

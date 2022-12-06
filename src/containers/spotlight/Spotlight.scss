@@ -1,7 +1,11 @@
 .background-wrapper {
   background-image: linear-gradient(180deg, #2d3b62, #47265B);
   color: white;
-  padding: 50px 0px;
+  padding: 150px 0px;
+  
+  @media only screen and (max-width: 800px) {
+    padding: 20px 0px;
+  }
 
   .spotlight-link {
     color: white;
@@ -13,7 +17,13 @@
       font-size: 1.6rem;
       line-height: 2.4rem;
       max-width: 75%;
-      min-width: 400px;
+      // min-width: 400px;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+
+      }
     }
     
     img, p  {

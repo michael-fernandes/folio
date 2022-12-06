@@ -10,18 +10,18 @@ import ContentWrapper from "../layout/ContentWrapper";
 
 export const PROJECTS = [
   {
-    name: "Tongle: inclusive design for civil tech",
+    name: "Tongle: inclusive design for civic tech",
     shortName: "Tongle",
     discipline: "design research",
     area: "Civil Tech",
     description:
-      "Co-creating design for a civil technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
+      "Co-creation for a civic technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
     icon: TongleIcon,
     link: "tongle",
     weight: 4,
   },
   {
-    name: "Uncertainty displays for on the go decision making",
+    name: "Uncertainty displays for mobile decision making",
     shortName: "Uncertainy Displays",
     discipline: "design research + prototyping",
     area: "Academic Resaearch",
@@ -32,7 +32,7 @@ export const PROJECTS = [
     weight: 4,
   },
   {
-    name: "COVID: vizualization for communicating risk rapid growth risk",
+    name: "COVID: vizualization for communicating risk of rapid growth",
     shortName: "Covid risk",
     discipline: "development + design re-thinking",
     area: "Global Health",

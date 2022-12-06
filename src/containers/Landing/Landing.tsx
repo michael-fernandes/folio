@@ -4,23 +4,18 @@ import { animated, easings, useSpring } from 'react-spring';
 import { useState } from "react";
 
 import "./Landing.scss";
+import fadeInUpSpring, { LONG_ANIMATION, SHORT_ANIMATION } from "../../hooks/animations/useFadeInUpSpring";
 type Props = {};
 
 export default function Landing({ }: Props) {
   const [showDots, setDotsVisible] = useState(false);
-
-  const fadeInUp = useSpring({
-    from: { y: 80, opacity: 0 },
-    to: { y: 0, opacity: 1 },
-    delay: 100,
-    config: { duration: 550, easing: easings.easeInCubic }
-  })
+  const fadeInUp = fadeInUpSpring({});
 
   const fadeInLeft = useSpring({
     from: { x: 80, opacity: 0 },
     to: { x: 0, opacity: 1 },
-    delay: 500,
-    config: { duration: 550, easing: easings.easeInCubic, },
+    delay: LONG_ANIMATION + 50,
+    config: { duration: SHORT_ANIMATION, easing: easings.easeInCubic, },
     onRest: () => setDotsVisible(true),
   })
 
@@ -39,12 +34,14 @@ export default function Landing({ }: Props) {
               Aligning design
             </h1>
             <h1 className="hero-text-p2">
-              with what matters.
+              with what matters
             </h1>
           </animated.div>
-          <animated.h2 className="subtitle" style={fadeInLeft}>Designer • Developer • Human-Computer Interaction</animated.h2>
+          <animated.h2 className="subtitle" style={fadeInLeft}>Inclusive design in a data driven future</animated.h2>
         </animated.div>
-        <HoverBubble showDots={showDots} />
+        <div className="landing-hover">
+          <HoverBubble showDots={showDots} />
+        </div>
       </section>
     </ContentWrapper >
   );

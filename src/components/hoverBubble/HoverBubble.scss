@@ -14,5 +14,9 @@
     left: -9999px;
     right: -9999px;
     margin: auto;
+
+    @media (hover: none) {
+      pointer-events: none;
+    }
   }
 }
