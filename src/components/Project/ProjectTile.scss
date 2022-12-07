@@ -15,13 +15,12 @@
   }
 
   .img {
-    width: auto;
     flex-grow: 2;
     width: 33.33%;
 
     img {
       height: auto;
-      max-height: 300px;
+      // max-height: 300px;
       width: 100%;
     }
   }
