@@ -81,6 +81,11 @@ html, body {
   justify-content: center;
 }
 
+.space-between-content {
+  justify-content: space-around;
+  align-items: center;
+}
+
 .flex-reverse {
   flex-flow: row-reverse;
 }

@@ -9,6 +9,8 @@ type Props = {
   description?: string;
   icon?: string;
   link?: string;
+  img?: string;
+  color?: string
 };
 
 export default function ProjectTile({
@@ -16,23 +18,27 @@ export default function ProjectTile({
   name = "Project Name",
   discipline = "Name",
   description,
-  icon,
   link,
+  img,
+  color,
 }: Props) {
   const classname = cx(className);
 
   return (
-    <ButtonTab link={link || '/'} classname={classname} >
-      <div className="tile-content">
-        <h3 className="title project-title">{name}</h3>
-        <h4 className="desc tile-discipline">{discipline}</h4>
-        <p className="project-description">{description}</p>
-        <button>View More</button>
-        {/* {link && <Link className="project-tile-link" to={link || "/"}>View more</Link>} */}
-      </div>
-      <div className="project-icon">
-        <img className="hover-animation" src={icon} alt={"Stick and dot representation of project"} />
-      </div>
-    </ButtonTab>
+    <div className="content-wrapper case-study-wrapper" style={{ background: color }}>
+      <ButtonTab link={link || '/'} classname={classname} >
+        <div className="tile-content">
+          <div className="tile-writing">
+            <h2 className="title project-title">{name}</h2>
+            <h3 className="desc tile-discipline">{discipline}</h3>
+            <p className="project-description">{description}</p>
+          </div>
+          <div className="img">
+            <img src={img} alt=" imgs" />
+          </div>
+          {/* <button>View More</button> */}
+        </div>
+      </ButtonTab>
+    </div>
   );
 }

@@ -47,7 +47,9 @@ function App() {
           <Route path="about" element={<About />} />
         </Routes>
         {pathname !== '/' && <Footer />}
-        {/* fun? */}
+        <div className="footer flex content-center">
+          Michael Fernandes © 2022
+        </div>
       </main>
     </ScrollToTop>
   );

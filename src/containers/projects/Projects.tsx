@@ -1,11 +1,8 @@
 import ProjectTile from "../../components/Project/ProjectTile";
 import "./Projects.scss";
-import RadifyIcon from "../../projects/Radify/imgs/RadifyIcon.svg";
-import BusIcon from "../../projects/Bus/BusIcon.svg";
-import TongleIcon from "../../projects/Tongle/TongleIcon.svg";
-import CovidIcon from "../../projects/covid/CovidIcon.svg";
-import ChildMortalityIcon from "../../projects/childMortality/ChildMortalityIcon.svg";
-import ContentWrapper from "../layout/ContentWrapper";
+import BusImg from "../../projects/Bus/imgs/beehive.png";
+import CovidImg from "../../projects/covid/WhiteHouse.png";
+import TongleImg from "../../projects/Tongle/imgs/tongleSquare.png";
 
 
 export const PROJECTS = [
@@ -16,9 +13,10 @@ export const PROJECTS = [
     area: "Civil Tech",
     description:
       "Co-creation for a civic technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
-    icon: TongleIcon,
     link: "tongle",
     weight: 4,
+    img: TongleImg,
+    color: '#ECEBEB',
   },
   {
     name: "Uncertainty displays for mobile decision making",
@@ -27,9 +25,10 @@ export const PROJECTS = [
     area: "Academic Resaearch",
     description:
       "Making decesion around quantitive predictions easier for even persons unfamiliar with data decesion making.",
-    icon: BusIcon, // Dot plot...?  or a linear dot
     link: "bus",
     weight: 4,
+    img: BusImg,
+    color: 'white',
   },
   {
     name: "COVID: vizualization for communicating risk of rapid growth",
@@ -38,29 +37,31 @@ export const PROJECTS = [
     area: "Global Health",
     description:
       "Rapidly deployed covid forecast visualization tool, and a retroactive look at the alignment between public health and the public.",
-    icon: CovidIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
     link: "covid",
     weight: 2,
+    img: CovidImg,
+    color: '#3E394B',
+
   },
-  {
-    name: "Radify",
-    discipline: "data viz",
-    area: "Economics",
-    description: "Continous radial representation of data.",
-    icon: RadifyIcon, //
-    link: "radify",
-    weight: 1,
-  },
-  {
-    name: "Child Mortality: interactive storytelling for health equity",
-    shortName: "Child Mortality",
-    discipline: "development + design",
-    area: "Global Health",
-    description: "An interactive story about achieving global health equity in under-5 child mortality.",
-    icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-    link: "child-mortality",
-    weight: 1,
-  },
+  // {
+  //   name: "Radify",
+  //   discipline: "data viz",
+  //   area: "Economics",
+  //   description: "Continous radial representation of data.",
+  //   icon: RadifyIcon, //
+  //   link: "radify",
+  //   weight: 1,
+  // },
+  // {
+  //   name: "Child Mortality: interactive storytelling for health equity",
+  //   shortName: "Child Mortality",
+  //   discipline: "development + design",
+  //   area: "Global Health",
+  //   description: "An interactive story about achieving global health equity in under-5 child mortality.",
+  //   icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
+  //   link: "child-mortality",
+  //   weight: 1,
+  // },
   // {
   //   name: "Protein Builder",
   //   discipline: "development + design",
@@ -81,19 +82,20 @@ export const PROJECTS = [
 
 export default function Projects() {
   return (
-    <ContentWrapper>
-      <section id="projects">
+    <section id="projects">
+      <div className="content-wrapper flex space-between-content projects-title">
         <h1>Projects</h1>
-        <div className="project-grid">
-          {PROJECTS.map((p, index) => (
-            <ProjectTile
-              key={`project-${index}`}
-              className={`project tile project-${index}`}
-              {...p}
-            />
-          ))}
-        </div>
-      </section>
-    </ContentWrapper >
+        <p>
+          A collection of projects which represent some of my favorite work.
+        </p>
+      </div>
+      {PROJECTS.map((projectConfig) => (
+        <ProjectTile
+          key={`prj-${projectConfig.link}`}
+          className={`case-study prj-${projectConfig.link}`}
+          {...projectConfig}
+        />
+      ))}
+    </section>
   );
 }

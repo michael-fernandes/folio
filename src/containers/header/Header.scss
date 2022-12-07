@@ -1,4 +1,4 @@
-header { 
+header, footer { 
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -46,7 +46,7 @@ header {
   color: var(--black);
 }
 
-.header-bottom {
+footer {
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -59,4 +59,10 @@ header {
   .header-link {
     color: white;
   }
+}
+
+.footer {
+  height: 40px;
+  color: var(--grey);
+  font-size: 0.8rem;
 }

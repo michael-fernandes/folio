@@ -1,25 +1,6 @@
 .project-grid {
-  display: grid;
-  // min-height: 500px;
-  // max-height: 600px;
   height: auto;
   margin-bottom: 200px;
-
-  gap: 1rem;
-
-  grid-template-columns:
-  [start] 1fr
-  [first] 1fr
-  [second] 1fr
-  [third] 1fr
-  [end];
-
-grid-template-rows:
-  [start] auto
-  [first] auto
-  [second] auto
-  [third] auto
-  [end];
 }
 
 @media only screen and (max-width: 750px) {
@@ -35,68 +16,9 @@ grid-template-rows:
   // background-image: linear-gradient(135deg, #614385, #516395);
   padding: 10px;
   text-decoration: unset;
-  color: black;
   color: rgb(80, 80, 80);
 }
 
-.project-0 {
-  // linear-gradient(#fff,#fff) padding-box,
-  // linear-gradient(180deg, #daffe0 1%, white 23%,  white) border-box;
-  background: #daffe0;
-  grid-column-start: start;
-  grid-column-end: second;
-  grid-row-start: start;
-  grid-row-end: second;  
-  order: 0;
-}
-
-.project-1 {
-  // background: linear-gradient(180deg, #F2FAFF 1%, white 23%,  white) border-box;
-  background: #F2FAFF;
-  grid-column-start: second;
-  grid-column-end: end;
-  grid-row-start: start;
-  grid-row-end: second;
-  order: 3;
-}
-
-.project-2 {
-  background: linear-gradient(180deg, #F4F2FF 1%, white 23%,  white) border-box;
-  grid-column-start: start;
-  grid-column-end: second;
-  grid-row-start: second;
-  grid-row-end: third;
-
-  order: 2;
-}
-
-.project-3 {
-  // background: linear-gradient(180deg, #FFFBF2 1%, white 23%,  white) border-box;
-  background: #FFFBF2;
-  grid-column-start: second;
-  grid-column-end: end;
-  grid-row-start: second;
-  grid-row-end: third;
-
-  order: 6;
-}
-
-.project-4 {
-  // background: linear-gradient(180deg, #FFF2FA 1%, white 23%,  whiten) border-box;
-  background: #FFF2FA;
-  grid-column-start: start;
-  grid-column-end: second;
-  grid-row-start: third;
-  grid-row-end: end;
-
-  order: 2;
-}
-
-.project-5 {
-  grid-column-start: second;
-  grid-column-end: end;
-  grid-row-start: third;
-  grid-row-end: end;
-
-  order: 6;
+.projects-title {
+  height: 300px;
 }

@@ -28,7 +28,6 @@ export default function Footer({ }: Props) {
             </div>
           ))}
           <div className="link"><Link className="nav-link" to="/">Home</Link></div>
-          <Header isBottom />
         </div>
       </div>
     </ >
