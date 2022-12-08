@@ -19,6 +19,7 @@ import "./App.scss";
 import "./Constants.scss";
 import "./containers/Container.scss";
 import "./projects/ProjectWriteUps.scss";
+import AlternativeSpringBreak from "./projects/ASB/AlternativeSpringBreak";
 
 function App() {
   const { pathname } = useLocation();
@@ -43,6 +44,7 @@ function App() {
           <Route path="tongle" element={<Tongle />} />
           <Route path="covid" element={<Covid />} />
           <Route path="child-mortality" element={<ChildMortality />} />
+          <Route path="neah-bay" element={<AlternativeSpringBreak />} />
 
           <Route path="about" element={<About />} />
         </Routes>
