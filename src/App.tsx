@@ -48,7 +48,10 @@ function App() {
         </Routes>
         {pathname !== '/' && <Footer />}
         <div className="footer flex content-center">
-          Michael Fernandes © 2022
+          <div>
+
+            Michael Fernandes © 2022
+          </div>
         </div>
       </main>
     </ScrollToTop>

@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import Header from '../../containers/header/Header';
 import { PROJECTS } from '../../containers/projects/Projects';
 import './Footer.scss';
 

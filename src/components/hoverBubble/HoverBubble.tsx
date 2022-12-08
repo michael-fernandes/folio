@@ -1,5 +1,7 @@
 import * as d3 from "d3";
 import { SyntheticEvent, useEffect, useMemo, useRef } from "react";
+import { easings, useSpring, animated } from "react-spring";
+import { LONG_ANIMATION, SHORT_ANIMATION } from "../../hooks/animations/useFadeInUpSpring";
 import "./HoverBubble.scss";
 
 interface ForceNode {
@@ -27,6 +29,13 @@ export default function HoverBubble({ showDots }: { showDots: boolean }) {
   const forceHat = isSmallerScreen ? 0.001 : 0.00075;
   const numNodes = isSmallerScreen ? 150 : 200;
   const ref = useRef(null);
+
+  const fadeIn = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    delay: LONG_ANIMATION + 50,
+    config: { duration: SHORT_ANIMATION, easing: easings.easeInCubic, },
+  })
 
   const nodes = useMemo(
     (): ForceNode[] =>
@@ -132,7 +141,8 @@ export default function HoverBubble({ showDots }: { showDots: boolean }) {
     >
       {
         showDots &&
-        <canvas
+        <animated.canvas
+          style={fadeIn}
           className="hover-bubble"
           height={height}
           width={width}

@@ -1,6 +1,6 @@
 .tile-desc {
   font-style: italic;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .tile-content {
@@ -25,6 +25,14 @@
     }
   }
 }
+
+// @media only screen and (min-width: 750px) {
+//   .tile-content {
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
 .case-study.prj-tongle {
   .tile-writing {
@@ -54,14 +62,8 @@
   }
 }
 
-.case-study {
-  color: black;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  text-decoration: unset;
+.case-study, .small-project {
+  color: var(--black);
 
   h2, h3 {
     padding: 0px;
@@ -78,8 +80,8 @@
   }
 
   p, .tile-discipline {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
   }
 
   img {
@@ -94,6 +96,31 @@
   }
 }
 
+.case-study, .small-project > a {
+  color: var(--black);
+  text-decoration: unset;
+}
+
+.case-study, .small-project {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .case-study {
+    .tile-writing {
+      order: 0;
+    }
+  
+    .img {
+      order: 0;
+    }
+  }
+}
+
 .project-tile-link {
   text-decoration: unset;
   color: black;
@@ -102,4 +129,15 @@
 .case-study-wrapper {
   height: 85vh;
   max-height: 500px;
+}
+
+.small-project {
+  text-align: left;
+  align-items: left;
+  max-width: 400px;
+  margin: 40px 0px;
+
+  p {
+    margin: 0px;
+  }
 }

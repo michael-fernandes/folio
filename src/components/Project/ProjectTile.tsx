@@ -22,10 +22,10 @@ export default function ProjectTile({
   img,
   color,
 }: Props) {
-  const classname = cx(className);
+  const classname = cx(className, "content-wrapper");
 
   return (
-    <div className="content-wrapper case-study-wrapper" style={{ background: color }}>
+    <div className="case-study-wrapper" style={{ background: color }}>
       <ButtonTab link={link || '/'} classname={classname} >
         <div className="tile-content">
           <div className="tile-writing">

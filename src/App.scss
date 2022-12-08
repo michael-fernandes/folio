@@ -53,6 +53,10 @@ html, body {
   margin: 20px;
 }
 
+.my-20 {
+  margin-top: 20px;
+}
+
 .primary-link {
   background: var(--purple);
   border-radius: 4px;
@@ -80,6 +84,7 @@ html, body {
 .center-content {
   justify-content: center;
 }
+
 
 .space-between-content {
   justify-content: space-around;

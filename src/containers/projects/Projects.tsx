@@ -3,6 +3,7 @@ import "./Projects.scss";
 import BusImg from "../../projects/Bus/imgs/beehive.png";
 import CovidImg from "../../projects/covid/WhiteHouse.png";
 import TongleImg from "../../projects/Tongle/imgs/tongleSquare.png";
+import SmallProjectLink from "../../components/Project/SmallProjectLink";
 
 
 export const PROJECTS = [
@@ -31,7 +32,7 @@ export const PROJECTS = [
     color: 'white',
   },
   {
-    name: "COVID: vizualization for communicating risk of rapid growth",
+    name: "COVID: communicating risk of exponential growth",
     shortName: "Covid risk",
     discipline: "development + design re-thinking",
     area: "Global Health",
@@ -42,51 +43,48 @@ export const PROJECTS = [
     img: CovidImg,
     color: '#3E394B',
 
+  }
+];
+const SMALL_PROJECTS = [
+  {
+    name: "Alternative Spring Break",
+    discipline: "volunteering",
+    area: "Inclusion in design + tech",
+    description: "K-12 out resach to expose 80+ middle school students of the Makah tribe to design thinking.",
+    // icon: RadifyIcon, //
+    link: "neah-bay",
+    weight: 1,
   },
-  // {
-  //   name: "Radify",
-  //   discipline: "data viz",
-  //   area: "Economics",
-  //   description: "Continous radial representation of data.",
-  //   icon: RadifyIcon, //
-  //   link: "radify",
-  //   weight: 1,
-  // },
-  // {
-  //   name: "Child Mortality: interactive storytelling for health equity",
-  //   shortName: "Child Mortality",
-  //   discipline: "development + design",
-  //   area: "Global Health",
-  //   description: "An interactive story about achieving global health equity in under-5 child mortality.",
-  //   icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-  //   link: "child-mortality",
-  //   weight: 1,
-  // },
-  // {
-  //   name: "Protein Builder",
-  //   discipline: "development + design",
-  //   area: "Health + Sustainability",
-  //   description: "Showcasing of a website showing the ",
-  //   icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-  //   // link: "protein",
-  // },
-  // {
-  //   name: "Change.org for product ideas",
-  //   discipline: "cocreative ",
-  //   area: "Design",
-  //   description: "A design experiment",
-  //   icon: RadifyIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
-  //   // link: "protein",
-  // },
+  {
+    name: "Child Mortality: interactive storytelling for health equity",
+    shortName: "Child Mortality",
+    discipline: "development + design",
+    area: "Global Health",
+    description: "An interactive story about achieving global health equity in under-5 child mortality.",
+    // icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
+    link: "child-mortality",
+    weight: 1,
+  },
+  {
+    name: "Radify",
+    discipline: "data viz",
+    area: "Economics",
+    description: "Continous radial representation of seasonal data, focusing on the usecase of Inflation data.",
+    // icon: RadifyIcon, //
+    link: "radify",
+    weight: 1,
+  },
 ];
 
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="content-wrapper flex space-between-content projects-title">
-        <h1>Projects</h1>
+      <div className="content-wrapper projects-title">
+        <h1>Case Studies & Projects</h1>
         <p>
-          A collection of projects which represent some of my favorite work.
+          A collection of case studies spanning topics such as inclusisive design to rethinking
+          how COVID-19 modeling visuals could be used to communicate risk. Followed by a collection of
+          smaller projects that I've worked on.
         </p>
       </div>
       {PROJECTS.map((projectConfig) => (
@@ -96,6 +94,17 @@ export default function Projects() {
           {...projectConfig}
         />
       ))}
+      <div className="content-center flex  my-20">
+        <div className="flex content-center content-wrapper flex-col  my-20">
+          {/*  to do make nice */}
+          {SMALL_PROJECTS.map((projectConfig) => (
+            <SmallProjectLink
+              {...projectConfig}
+              key={`prj-${projectConfig.link}`}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
