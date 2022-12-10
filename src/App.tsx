@@ -20,9 +20,20 @@ import "./Constants.scss";
 import "./containers/Container.scss";
 import "./projects/ProjectWriteUps.scss";
 import AlternativeSpringBreak from "./projects/ASB/AlternativeSpringBreak";
+import ReactGA from 'react-ga';
+import { useEffect } from "react";
+
+if (process.env.NODE_ENV !== "development") {
+  // Add to app engine, right now more useful to have
+  ReactGA.initialize("UA-73790222-1" || '');
+}
 
 function App() {
   const { pathname } = useLocation();
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  })
 
   return (
     <ScrollToTop>
@@ -49,9 +60,8 @@ function App() {
           <Route path="about" element={<About />} />
         </Routes>
         {pathname !== '/' && <Footer />}
-        <div className="footer flex content-center">
-          <div>
-
+        <div className="footer flex">
+          <div className="m-auto">
             Michael Fernandes © 2022
           </div>
         </div>

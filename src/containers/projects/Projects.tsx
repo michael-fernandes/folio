@@ -45,7 +45,7 @@ export const PROJECTS = [
 
   }
 ];
-const SMALL_PROJECTS = [
+export const SMALL_PROJECTS = [
   {
     name: "Alternative Spring Break",
     discipline: "volunteering",
@@ -79,13 +79,13 @@ const SMALL_PROJECTS = [
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="content-wrapper projects-title">
-        <h1>Case Studies & Projects</h1>
-        <p>
+      <div className="content-wrapper projects-title flex">
+        <h1 className="m-auto">Projects</h1>
+        {/* <p>
           A collection of case studies spanning topics such as inclusisive design to rethinking
           how COVID-19 modeling visuals could be used to communicate risk. Followed by a collection of
           smaller projects that I've worked on.
-        </p>
+        </p> */}
       </div>
       {PROJECTS.map((projectConfig) => (
         <ProjectTile
@@ -94,6 +94,9 @@ export default function Projects() {
           {...projectConfig}
         />
       ))}
+      {/* <div className="content-wrapper projects-title flex">
+        <h1 className="m-auto">Smaller Projects</h1>
+      </div> */}
       <div className="content-center flex  my-20">
         <div className="flex content-center content-wrapper flex-col  my-20">
           {/*  to do make nice */}
