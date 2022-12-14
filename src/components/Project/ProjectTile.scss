@@ -49,6 +49,7 @@
   h3 {
     color: white
   }
+
   .tile-content {
     flex-direction: column;
   }
@@ -105,19 +106,42 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  // align-items: center;
   justify-content: center;
 }
 
 @media only screen and (max-width: 750px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .h3 {
+    font-style: italic;
+    font-weight: 300;
+    
+  }
+
   .case-study {
-    .tile-writing {
-      order: 0;
-    }
+    // display: block;
+    .tile-content {
+      flex-direction: column;
   
-    .img {
-      order: 0;
+      .tile-writing {
+        order: 0;
+      }
+    
+      .img {
+        order: 0;
+        width: 50%;
+   
+    
+        img {
+          height: auto;
+          // max-height: 300px;
+          width: 100%;
+        }
+      }
     }
+
   }
 }
 
@@ -128,14 +152,17 @@
 
 .case-study-wrapper {
   height: 85vh;
-  max-height: 500px;
+  max-height: 700px;
 }
 
 .small-project {
-  text-align: left;
   align-items: left;
-  max-width: 400px;
-  margin: 40px 0px;
+  border: 2px solid var(--n);
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 10px 0px;
+  padding: 10px;
+  text-align: left;
 
   p {
     margin: 0px;

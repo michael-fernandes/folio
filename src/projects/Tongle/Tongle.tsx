@@ -9,6 +9,13 @@ import Tensions from './Tensions';
 import PDSetup from './imgs/pd.png';
 // import InContext from './imgs/in_context.jpg';
 
+const WORKSHOPS = {
+  "Workshop #1": [{
+    activity: "Negative Design Ideas",
+    rationale: "We noticed that when first introduced to the concept of a RUC, many people could not get past "
+  }],
+};
+
 export default function Tongle() {
   return (
     <ContentWrapper>
@@ -37,35 +44,43 @@ export default function Tongle() {
       <div className="content">
         <h2>The Challenge</h2>
         <p>
-          Across <a className="text-link" href="https://www.ibtta.org/road-usage-charge-ruc">the United States</a>, governments are proposing a fee porportional to the amount of
-          miles driven on the road by each citizen to pay for road and highway infrastructure.  This fee has been called a Road Usage Charge (RUC) and is a future looking tax paradigm that
-          aims to create an equitable system as gasoline cars become less common. Tasked by the Washington State Transportation Commission, I led the design research and visioning
-          on a team of 3 others to design a tech-based solution to collect the miles driven by citizens for a road usage charge.
+          As the move to a more sustainable technology and systems comes, a need arises to adjust laws to match the innovation in technology. A Road Usage Charge(RUC) is one such proposed
+          solution to pay for public infrastructure as gasoline powered taxes become obsolete. RUCs, proposes that citizens should pay a permile charge in proportion to the amount driven
+          on the road. Hopefully more equitable way to pay for public road infrustructure.
+        </p>
+        <p>
+          Tongle was a project to explore and idaete ways to create a tech system to track road usage on public roads by citizens who opted into the system. I led the design research
+          portion of the project which used a participatory design philosophy to solve difficult ethical, political and social problems around the technology.
         </p>
         <h2>The Strategy</h2>
         <p>
-          Monitoring citizen's road usage presents a problem, to get an accurate guage there is an obvious immediate invasion of privacy.
-          Travel between statelines, on private roads, etc present problems. It's easy to imagine that the end users (citizens of WA state in this case),
-          would have nuisanced opinions and feelings that would complicate user acceptance of an ill-proposed technology. The idea to use Participatory
-          design emerged because the democratic nature of the design philosophy seemed to align with the context of creating a civil technology.
-          As a team we choose a process that used 3 co-creation workshops, and luckily so because the cocreation workshops revealed more
-          problems with potential designs than was intially apparent.
+          A RUC is by no means an easy idea to agree with. Yes, on the surface a more equitable way to pay for road infrastructure makes sense, however, how mileage
+          is recoreded presents a dilema. Without a correctly formulated solution there exists the possibility of either disgruntled citizens or an unequitable system
+          arrising. The motivation to use pariticpatory design as a framework to navigate this problem, arose from the fustration of designing for a ethically complex
+          system. The democratic nature of the of the philosophy seemed to align with the context of creating a civil technology. I was lucky enoug to have been exposed
+          to particpatory design philosophy both in a theoretical class and later as a participant in a series of design workshops. I think I was even more lucky I had a
+          team that was willing to stake their capstone on an unown technique and a great advisor to help us along the path.
         </p>
+        <p>
+          Our strategy centerd around a series of 3 co-design workshops. We spent multiple weeks activeley a group of 10 participants all with a diverse
+          set of identities ranging across urban/rural polictical spectrums as well as sex and gender identifications. With this group we planned to progressively
+          move an ideation process using co-design acitivities to start from idea exploration and eventually lead to solidified design ideas for a possible RUC.
+        </p>
+        {/* triangle workshops */}
         <div className="flex center-content margin-20">
           <img src={PDSetup} alt="A diagram showing a designer and and end-users contributing to design ideas." className="cover-2-img" />
         </div>
       </div>
       <div className="content">
-        <h2>Design Workshops</h2>
+        <h2>Co-creation Workshops</h2>
         {/* <div className="half-img content">
           <img src={ProcessChart} className="cover-2-img" />
         </div> */}
         <p>
-          As the design researcher on the project before each workshop I would design  a workshop protocol based on where we were in the design process. In some workshops we expaned
-          ideas and in others we refined, validated and tried to break ideas. Coming up with the correct activities became a design challenge in itself. Coming into each workshop my team and I
-          (with the aid ofan awesome advisor, Jon Porter) selected or imagined activities that gained us the data points we needed to inform the next stage of design development.
-          While we did not know how each workshop would look until the week before the general strategy i devised moved the project down the ideaetion funnel from a broad
-          exploration of ideas to a refined idea.
+          Leading the design research, before each workshop, I would design a workshop protocol based on where we were in the design process. In some workshops we used co-design acitivities
+          to expaned ideas and in others we refined, validated and tried to break ideas. Coming up with the correct activities became a design challenge in itself. Before  each workshop my team
+          and I selected or at times imagined activities that gained us the data points we needed to inform the next stage of design development. While we did not know how each workshop would look
+          until the week before, the general strategy of a workshop followed by a design sprint (and advising from our advisor) drove our project forward.
         </p>
       </div>
       <div className="content">

@@ -67,11 +67,11 @@ export default function Covid({ }: Props) {
         <br />
         <br />
 
-        <h1>How process might of helped </h1>
-        (Shorter, I need to track down a paper that came out of the lancet and outlines how to make a more participatory process(using a global health POV)).
+        {/* <h1>How process might of helped </h1>
+        (Shorter, I need to track down a paper that came out of the lancet and outlines how to make a more participatory process(using a global health POV)). */}
 
         <br /><br />
-        —— Im not really sure I want to cite/link like this, maybe just links. Want this to emphasize my design thinking over research ability
+        Citations
         <br />
         [1] https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(21)00029-X/fulltext#bib5
         <br /><br />

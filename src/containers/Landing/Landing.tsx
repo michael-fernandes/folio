@@ -13,8 +13,9 @@ export default function Landing({ }: Props) {
   const fadeInUp = fadeInUpSpring({});
   const debouncedSetDots = useMemo(() => debounce(() => setDotsVisible(true), 100), [setDotsVisible]);
 
-  const fadeInLeft = useSpring({
-    from: { x: 80, opacity: 0 },
+  const fadeIn = useSpring({
+    // from: { x: 80, opacity: 0 }, // fade in left otherwise
+    from: { x: 0, opacity: 0 },
     to: { x: 0, opacity: 1 },
     delay: LONG_ANIMATION + 50,
     config: { duration: SHORT_ANIMATION, easing: easings.easeInCubic, },
@@ -39,7 +40,7 @@ export default function Landing({ }: Props) {
               with what matters
             </h1>
           </animated.div>
-          <animated.h2 className="subtitle" style={fadeInLeft}>Inclusive design in a data driven future</animated.h2>
+          <animated.h2 className="subtitle" style={fadeIn}>Inclusive design in a data driven future</animated.h2>
         </animated.div>
         <div className="landing-hover">
           <HoverBubble showDots={showDots} />
