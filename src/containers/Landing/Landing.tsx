@@ -30,6 +30,8 @@ export default function Landing({ }: Props) {
           {/* <h1 className="title">
             Exploring the affect of data upon design from all directions.
           </h1> */}
+          {/* aligning design with what matters */}
+          {/* in a data driven inherrently political world */}
           <animated.div className="hero-text" style={fadeInUp} >
             <h1 className="hero-text-p1">
               {/* Envisioning, a more balanced future where the most disadvantaged benefit. */}
