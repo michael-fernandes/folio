@@ -19,8 +19,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 100
   },
   "include": [
     "src"

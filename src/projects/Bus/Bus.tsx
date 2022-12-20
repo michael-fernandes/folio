@@ -51,17 +51,15 @@ export default function Bus() {
         <div className="content">
           <h2>The challenge</h2>
           <p>
-            Typically, displays lay-user displays present computer generated quantitative predictions in point form (weather forecasts, duration of your commute each day),
-            compltely ignoring any uncertainty in them. Presenting a display with uncertainty integrated into the UI comes with, well, uncertainty.
-            Figuring a way to communicate uncertainty in predictions, especially to lay audiences, comes with the problem that its unclear which encoding to use,
-            and even if an uncertainty encoding will lead to better decesion making. The research and prototyping done here attempts to clearly establish
-            how to present uncertainty in glancable interfaces to lead to the most optimal decesions possible.
+            Everyday people encounter computer generted predictions while mobile. Decesions like when to leave to catch a bus, what path to walk according to the weather, and how long a commute might be all might be deceions made from a computer generated prediciton. Typically, these predictions are presented as singular point estimates which ignore any uncertainty within the estimate. Representing uncertainty hidden with point estimate perhaps offers a chance to support on the go decesion makers. However, how to reprent uncertainty and the effect uncertainty encodings might have on decision making remains unclear. This research attempts to begin to to establish
+            how to present uncertainty in glancable interfaces to lead to optimal decesions.
           </p>
         </div>
         <div className="content">
           <h2>Strategy</h2>
           <p>
-            The primary task in this proejct, was to design an integrated display that shows users bus arrival times with uncertainty i
+            In orderaskdjnsa
+            The primary task in this proejct, was to design UI to display uncertainty to users bus arrival times with Uncertainty i
             Before the start of this phase of the project, mixed-methods research had been carried out (and published to CHI 2016) to research the design space for persenting uncertainty in the
             context of bus arrival times. Using the previous work to inform the design we used an iterative design process that included rapid prototyping and progressive usability tests until
             a successful design was found.
