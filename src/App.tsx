@@ -1,5 +1,5 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import Landing from "./containers/landing/Landing";
+import Landing from "./containers/Landing/Landing";
 import Projects from "./containers/projects/Projects";
 
 
