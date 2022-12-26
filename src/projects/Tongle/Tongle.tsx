@@ -31,8 +31,7 @@ const WORKSHOPS: Workshops = {
     activity: "Negative Design Ideas",
     rationale: "Start brainstorming ",
     outcome: "Data points in the form of discussion notes and the post-its used for brainstorming"
-  },
-  ],
+  }],
   "Workshop #2": [{
     activity: "Pre-workshop survey",
     rationale: "Validate the \"Core Values\" we identified in Design Sprint #1",
@@ -114,20 +113,19 @@ export default function Tongle() {
       <div className="content">
         <div>
           <Table name={"Workshop #1"} rows={WORKSHOPS["Workshop #1"]} />
+          <p>
+            Workshop #1 set out to introduce participants to a Road Usage Charge and begin to uncover and communicate across teh design and participant teams why creating a technology for a RUC was both technically and socially hard. To do activities like Negative Idea brainstorm were used to specifically uncover versions of a technology based RUC that paritcipants believed would be a poor implementation in some way. Comparing eachothers bad ideas allowed particiapnts to get an idea of not just how they felt about the RUC, but also the participants around them.
+          </p>
           <Table name={"Workshop #2"} rows={WORKSHOPS["Workshop #2"]} />
+          <p>
+            Workshop #2 sought to validate and further assumptions workshop leaders made after workshop #1. By using a survey admistered before the workshop particpants were given a chance to shape the unfolding of what the design process focused on from that point further. Using the validated data, Particpants took key themes and applied them to their first prototypes of what a RUC might look like.
+          </p>
           <Table name={"Workshop #3"} rows={WORKSHOPS["Workshop #3"]} />
+          <p className="content-exp">
+            Workshop #3  used the concept of "(human) value tensions" to help participaints think about how to navigate the competing interests in a RUC. These tensions emerged after workshp #1, and were first validated before being used as discussion tools for the rest of workshops and final design phase. We found that not only were they helpful for the core design team to understand the problem, perhaps more importantly, the pariticpants were able to grasp on to them and use them for discussion amongst themselves in ways that allowed for clear conversations about the relative strength of
+            different ideas or solutions.
+          </p>
         </div>
-        <h2>The tension</h2>
-        <p className="content-exp">
-          In the end the driving factor in this project became the uncovering of "(human) value tensions" which began to emerge after workshp one, were validated, and used as discussion tools for the rest of workshops and final design phase. We found that not only were they helpful for the core design team to understand the problem, perhaps more importantly, the pariticpants were able to grasp on to them and use them for discussion amongst themselves in ways that allowed for clear conversations about the relative strength of
-          different ideas or solutions.
-        </p>
-        <p>
-          "You can't have both privacy and accuracy. You can only have one or the other. But not privacy and accuracy, Okay?"
-        </p>
-        <p>
-          "For me, my most important value is accuracy, I can't imagine.... however for [names another participant] there most imporatant value is privacy, and finding something that works for both of us seems hard."
-        </p>
       </div>
       <Tensions />
       <div className="content">
@@ -136,7 +134,10 @@ export default function Tongle() {
           After the participatory part of the project was done, I took on more of a support roll, assisting the two designers on our team make decesions and arrive at a final suggestion. The research generated through our particiaptory process, really spoke for itself. A design didn't just emerge, but, when we found arrived at the final one, it fit right into the value tensions.
         </p>
         <p>
-          In the end, we ended up doing research through design. While I'm prepared to offer defense on why our design works for the broadest range of citizens, I think more interstingly it lent evidence (and a framework) that a smart-phone only solution would not work in isolation. Our pairing of a physical device that tracked miles when privacy is needed and a smart phone when accuracy is needed allowed for flexible use of the system. Letting users get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
+          "You can't have both privacy and accuracy. You can only have one or the other. But not privacy and accuracy, Okay?"
+        </p>
+        <p>
+          "For me, my most important value is accuracy, I can't imagine.... however for [names another participant] there most imporatant value is privacy, and finding something that works for both of us seems hard."
         </p>
       </div>
       <div>
@@ -145,6 +146,9 @@ export default function Tongle() {
       </div>
       <div className="content">
         <h2>Reflection</h2>
+        <p>
+          Ultimately, the participatory process offered a way to do research through design. While the sponsors of the project, like our idea because it provided a solution that worked for a broad group of citizens, I think more importantly the project lent key evidence that a smart-phone only solution would not work in isolation. Our pairing of a physical device that tracked miles when privacy is needed and a smart phone when accuracy is needed allowed for flexible use of the system. Letting users get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
+        </p>
         <p>
           By focusing on human-values(via a value sensitive design framework), we were able to increase end-user acceptance of the final proposed solution. Using co-creation helped uncover what types of values were embded in the design challenge, and then bringing these values to the forefront of the co-creation was vital for the sucess of the project. Further the slow unwinding of the design challenge that happened during the sequential workshops allowed for both the participants and design leaders to slowly digest the nuisances of the problem and avoid gut reactions.
         </p>
