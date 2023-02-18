@@ -25,9 +25,10 @@ export default function HoverBubble({ showDots }: { showDots: boolean }) {
   const width = isSmallerScreen ? (window.innerWidth - PAGE_PADDING_X) * 2 : 1000;
 
   const height = width;
+  const iterations = isSmallerScreen ? 1 : 3;
   const radius = isSmallerScreen ? 3 : 4;
   const forceHat = isSmallerScreen ? 0.001 : 0.00075;
-  const numNodes = isSmallerScreen ? 150 : 200;
+  const numNodes = isSmallerScreen ? 125 : 200;
   const ref = useRef(null);
 
   const fadeIn = useSpring({
@@ -116,7 +117,7 @@ export default function HoverBubble({ showDots }: { showDots: boolean }) {
           d3
             .forceCollide()
             .radius((d: any) => d.r + 1)
-            .iterations(3)
+            .iterations(iterations)
         )
         .force(
           "charge",

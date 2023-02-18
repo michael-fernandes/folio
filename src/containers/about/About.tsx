@@ -1,6 +1,6 @@
 import ContentWrapper from '../layout/ContentWrapper'
 import './About.scss';
-
+import headshot from './me.jpg';
 {/* <p>
   Looking at the world through the lense of data is hard not to do.
   Either you do it, or it is done for you.
@@ -15,31 +15,17 @@ export default function About() {
     <ContentWrapper>
       <div className="about">
         <div className="overview">
-          <div>
-            ~~ Picture of me, or something ~~
+          <div className="image-wrapper">
+            <img className="about-image" src={headshot} />
           </div>
-          <div>
+          <div className="about-content">
             <h1>Me</h1>
-            ~~ some stuff about my background and experiences, focusinng on outreach, covid modeling, komboucha brewing ~~
-            {/* probably some stuff about my background and experiences */}
-            {/* <p>
-              (rough draft, will shift away from data). I began my career seeking to understand how humans can better use computer predictions,
-              in ways that lead to increasingly higher quality decesions.
-              Begining to understand the power computers incrasingly have on human decsions, from small such as when should i leave for the bus to large such as should i wear a
-              surgical mass to me has led me to the belief that: a world with out inclsuive thinking about data, is one that is leads to less quality of life (placeholder).
-            </p>
-            <h2>
-              <i>A world with out inclsuive thinking about data, is one that is leads to less quality of life.</i>
-            </h2>
             <p>
-              So far in my career I have worked in Cloud Computing, Public Health and Sustainability and am eager to make a bigger impact.
-              I'm inspired by finding the win-win designs that simutaneously serve the most disadvantaged
-              persons while also making thing better for the rest as the population as well.
+              The palces I've been in my design career so far have been surprising. From finding myself on the virtual front lines for the fight against COVID-19, to a small business performing a green lighting retrofit. The one thing I have followed this whole time has been a desire to balance technical complexity with creating Human Centered products.
             </p>
             <p>
-              In my freetime, you can find me, Rock Climbing, Skiing, fermenting food (my favorite is komboucha), perserving my cultural heritage
-              (primarily through food and cooking).
-            </p> */}
+              Sometimes I think of myself as a designer masquerading.
+            </p>
           </div>
         </div>
       </div>

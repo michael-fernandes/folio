@@ -3,8 +3,9 @@ import ContentWrapper from '../../containers/layout/ContentWrapper'
 // import GasTax from './imgs/gas_tax.jpg'
 
 import honorable from '../honorable.png';
-import Flow2 from './imgs/key-flow2.png';
-import Flow1 from './imgs/key-flow1.png';
+import flow2 from './imgs/key-flow2.png';
+import flow1 from './imgs/key-flow1.png';
+import StateFlow from './imgs/state-flow.png';
 import Tensions from './Tensions';
 import PDSetup from './imgs/pd.png';
 import Table from '../../components/table/Table';
@@ -87,11 +88,11 @@ export default function Tongle() {
           As the move to a more sustainable technology and systems comes, a need arises to adjust laws to match the innovation in technology. A Road Usage Charge(RUC) is one such proposed solution to pay for public infrastructure as gasoline powered taxes become obsolete. RUCs, proposes that citizens should pay a permile charge in proportion to the amount driven on the road. Hopefully more equitable way to pay for public road infrustructure.
         </p>
         <p>
-          Tongle was a project to explore and idaete ways to create a tech system to track road usage on public roads by citizens who opted into the system. I led the design research portion of the project which used a participatory design philosophy to solve difficult ethical, political and social problems around the technology.
+          Tongle was a project to explore and ideate ways to create a tech system to track road usage on public roads by citizens who opted into the system. I led the design research portion of the project which used a participatory design philosophy to solve difficult ethical, political and social problems around the technology.
         </p>
         <h2>The Strategy</h2>
         <p>
-          A RUC is by no means an easy idea to agree with. Yes, on the surface a more equitable way to pay for road infrastructure makes sense, however, how mileage is recoreded presents a dilema. Without a correctly formulated solution there exists the possibility of either disgruntled citizens or an unequitable system arrising. The motivation to use pariticpatory design as a framework to navigate this problem, arose from the fustration of designing for a ethically complex system. The democratic nature of the of the philosophy seemed to align with the context of creating a civil technology. I was lucky enoug to have been exposed to particpatory design philosophy both in a theoretical class and later as a participant in a series of design workshops. I think I was even more lucky I had a team that was willing to stake their capstone on an unown technique and a great advisor to help us along the path.
+          A RUC is by no means an easy idea to agree with. Yes, on the surface a more equitable way to pay for road infrastructure makes sense, however, how mileage is recorded presents a dilemma. Without a correctly formulated solution there exists the possibility of either disgruntled citizens or an inequitable system arising. The motivation to use participatory design as a framework to navigate this problem, arose from the frustration of designing for a ethically complex system. The democratic nature of the of the philosophy seemed to align with the context of creating a civil technology. I was lucky enough to have been exposed to participatory design philosophy both in a theoretical class and later as a participant in a series of design workshops. I think I was even more lucky I had a team that was willing to stake their capstone on an unknown technique and a great advisor to help us along the path.
         </p>
         <p>
           Our strategy centerd around a series of 3 co-design workshops. We spent multiple weeks activeley a group of 10 participants all with a diverse set of identities ranging across urban/rural polictical spectrums as well as sex and gender identifications. With this group we planned to progressively move an ideation process using co-design acitivities to start from idea exploration and eventually lead to solidified design ideas for a possible RUC.
@@ -131,18 +132,25 @@ export default function Tongle() {
       <div className="content">
         <h2>Final Solution</h2>
         <p>
-          After the participatory part of the project was done, I took on more of a support roll, assisting the two designers on our team make decesions and arrive at a final suggestion. The research generated through our particiaptory process, really spoke for itself. A design didn't just emerge, but, when we found arrived at the final one, it fit right into the value tensions.
+          After the participatory workshops were done, I took on more of a support roll assisting the two designers on our team to make decesions and arrive at a final design proposal. The research generated through our particiaptory process spoke for itself. A design didn't easily emerge from our data, but, when we arrived on our final design, we marveled at how it fit right into the value tensions.
+        </p>
+        <p>
+          In the end, the crucial insight we arrived can be summarized by the following quotes from workshoppers during the closing reflection activity of the workshop.
         </p>
         <p>
           "You can't have both privacy and accuracy. You can only have one or the other. But not privacy and accuracy, Okay?"
         </p>
         <p>
-          "For me, my most important value is accuracy, I can't imagine.... however for [names another participant] there most imporatant value is privacy, and finding something that works for both of us seems hard."
+          "For me, my most important value is accuracy, I can't imagine a solution that isn't highly accurate. However for [names other participant] the most imporatant value is privacy, and finding something that works for both of us seems hard."
+        </p>
+        <p>
+          From this we realized we had to create a flexible solution, one that allowed privacy during moments where citizens needed it while also supporting accuracy (for example, allowing locaiton data to be collected when participants travel out of state or on private roads). Our product idea Tongle emerged to allow users to flexibly toggle between different methods of tracking RUC mileage.  Using a bluetooth device connected to a car's OBDII port users can track mileage driven by a registered car in general. By using a an app to connect to the device a user can further log and audit particular trips that require location services such as driving out of state or on private roads.
         </p>
       </div>
       <div>
-        <img src={Flow1} className="cover-1-img" />
-        <img src={Flow2} className="cover-1-img scale-75" />
+        <img src={flow1} alt="A key flow for paying" className="cover-1-img" />
+        <img src={flow2} alt="A key flow for disputing payment" className="cover-1-img scale-75" />
+        <img src={StateFlow} alt="state flow of data" className="cover-1-img scale-75" />
       </div>
       <div className="content">
         <h2>Reflection</h2>
