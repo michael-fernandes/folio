@@ -7,5 +7,5 @@ type Props = {
 }
 
 export default function ContentWrapper({ children, classWrapper = '' }: Props) {
-  return <div className={cx("content-wrapper", { [classWrapper]: classWrapper })}>{children}</div>
+  return <section className={cx("content-wrapper", { [classWrapper]: classWrapper })}>{children}</section>
 }

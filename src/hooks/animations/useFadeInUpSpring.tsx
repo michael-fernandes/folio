@@ -11,7 +11,7 @@ export default function useFadeInUpSpring({ duration = LONG_ANIMATION, pause = f
     to: { y: 0, opacity: 1 },
     delay,
     config: { duration, easing: easings.easeInCubic },
-    onStart: () => console.log('started', pause),
-    onRest: () => console.log('rest hit'),
+    // onStart: () => console.log('started', pause),
+    // onRest: () => console.log('rest hit'),
   })
 }

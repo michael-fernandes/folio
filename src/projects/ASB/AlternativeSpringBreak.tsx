@@ -1,17 +1,17 @@
 // import ActionLink from "../../components/link/ActionLink";
 import ContentWrapper from "../../containers/layout/ContentWrapper";
 import CoverImg from "./imgs/class.png";
-import CoolImg from "./imgs/too_cool.png";
 import ZoomedImg from "./imgs/zoomed.png";
-import PeepsImg from "./imgs/peeps.png";
+import Teaching from './imgs/teaching.png'
+import Peeps from './imgs/peeps.png'
+import Present from './imgs/present.gif'
 
 export default function AlternativeSpringBreak() {
   return (
     <ContentWrapper>
       <div className="overview container">
         <div className="overview-title">
-          <h1>K-12 Outreach</h1>
-          <h1>Design Thinking Workshops for Middle School students of the Makah Tribe</h1>
+          <h1>Design thinking workshops for K12 student innovation</h1>
           <div className="overview-button-container">
             <p>
               {/* <ActionLink href="http://www.radify.info">Visit App</ActionLink> */}
@@ -20,40 +20,51 @@ export default function AlternativeSpringBreak() {
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
-          <span className="overview-item">Co-founder</span><br /><br />
+          <span className="overview-item">Workshop coleader and program cofounder</span><br /><br />
 
           <span className="overview-summary">
-            <i>K-12 outreact to expose 80+ middle school students of the Makah tribe to design thinking.</i>
+            <i>K-12 outreach to expose 80+ middle school students of the Makah tribe to design thinking.</i>
           </span>
         </div>
       </div>
-      <div className="flex center-content">
-        <img src={CoverImg} className="cover-2-img" />
+      <div className="content writeup">
+        <h2>About the program</h2>
+        <p>
+          During the Winter and Spring of 2017, together with a group of fellow students form the UW HCDE department we planned a series of week long design thinking workshops as a college pipeline project. The larger goal of the design workshops was
+          to introduce students to the concept of design thinking with hopes of bringing them into the design field later in life. We partneted with the Makah Tribe who's anceteral land resides in the North East most area of Washington state.
+        </p>
+      </div>
+      <div className="content">
+        <div className="flex content-center">
+          <img className="cover-2-img" src={CoverImg} />
+          <img className="cover-2-img" src={ZoomedImg} />
+        </div>
       </div>
 
       <div className="content writeup">
+        <h2>Program goals</h2>
         <p>
-          in the Winter and Spring of 2017 a team of students and advisors from the depart of HCDE and I put together
-          a week long Design Thinking Workshop as a college pipeline project. The larger goal of the design workshpps was
-          to get students excited about the prospect of a high education. Specifically we hoped to exposed
-          Makah Tribe and other members of the Makah Tribe Reservation in remote Northwest Washington to design thinking.
+          As a outreach program, we hoped to work with youth members of the Makah Tribe to introduce them to Design Thinking. With the hope they might have opportunities to apply the skills they learned to projects in their community. In retrospective this was an ideal situation. In reality, we arrived and faced all the normal challenges with facing middle school students. What's more it appeared,to me at least, that our tech influenced view of design thinking did not align with the values of the community. Instead of thinking about comodificaiton lots of our students were thinking from viewpoints of the envorinment or their collective community
         </p>
-        <p>
-          To put together the design workshops the other student leaders and I designed a workshops to teach students
-          design thinking through a project based curriculum that asked them to prototype a design idea for their community.
-        </p>
-        <div>
-          <div className="flex content-center">
-            <img className="cover-2-img" src={CoverImg} />
-            <img className="cover-2-img" src={CoolImg} />
-          </div>
-          <div className="flex content-center">
-            <img className="cover-2-img" src={ZoomedImg} />
-            <img className="cover-2-img" src={PeepsImg} />
-            {/* <video src={Vid} /> */}
-          </div>
+      </div>
+      <div>
+        <div className="flex content-center">
+          <img className="cover-2-img" src={Teaching} />
+          <img className="cover-2-img" src={Peeps} />
+          {/* <video src={Vid} /> */}
         </div>
       </div>
-    </ContentWrapper>
+      <div className="content writeup">
+        <h2>Outcome</h2>
+        <p>
+          In the end my group of student leaders and I adapted our lesson plan for 80+ 6-8 gradem students attending school on the Makah Reservation. It was dynamic experience where I found myself learning form our students I'm sure as much as they were learning from us. In the end I'm pretty confident that most students won't complete a whole UCD process until their next exposure. I think more importaant was the one on one mentoring where design thinking could be modeled and influenced.
+        </p>
+      </div>
+      <div className="writeup content">
+        <div className="center-content flex">
+          <img className="cover-2-img" src={Present} />
+        </div>
+      </div>
+    </ContentWrapper >
   );
 }

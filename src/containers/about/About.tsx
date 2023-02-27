@@ -21,10 +21,13 @@ export default function About() {
           <div className="about-content">
             <h1>Me</h1>
             <p>
-              The palces I've been in my design career so far have been surprising. From finding myself on the virtual front lines for the fight against COVID-19, to a small business performing a green lighting retrofit. The one thing I have followed this whole time has been a desire to balance technical complexity with creating Human Centered products.
+              My design career has taken me to some pretty surprising places so far . From finding myself on the virtual front lines for the fight against COVID-19, to a small business performing a green lighting retrofit. The one thing I have followed this whole time has been a desire to balance technical complexity with creating Human Centered products.
             </p>
             <p>
-              Sometimes I think of myself as a designer masquerading.
+              In the roles I take on, I tend to wear two faces, half software developer and half engineer. To do this I have deployed focused skills around Data Visualization and design for decesion making all the while seeking out situations to deploy inclusive design techniques like participatory design.
+            </p>
+            <p>
+              Currently, I am exploring the social impact of automation via a role as senior UX engineer at Simplr. Outside of work you can either find me in the outdoors(hopefully skiing) or cooking the latest dish I'm obsseed with.
             </p>
           </div>
         </div>

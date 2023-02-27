@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Footer({ }: Props) {
   const { pathname } = useLocation();
-  console.log(pathname)
+
   return (
     <>
       {/* <ul className="project-links flex center-content">

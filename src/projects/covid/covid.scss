@@ -1,0 +1,40 @@
+.scrollama-container {
+  max-height: 90vh;
+  overflow: scroll;
+  display: block;
+}
+.graphic-container {
+  padding:  20vh 0vw 20vh ;
+  display:  flex ;
+  justify-content:  space-between ;
+}
+
+.graphic {
+  flex-basis:  65%;
+  position: sticky;
+  width:  100%;
+  height:  70vh;
+  top:  1vh;
+  display:  flex;
+  align-items:  center;
+  justify-content:  center;
+  overflow: hidden;
+  & p {
+    font-size:  5rem;
+    font-weight: 700;
+    text-align:  center;
+    color:  #fff;
+  }
+  & video {
+    max-width: 100%;
+  }
+}
+
+.scroller {
+  flex-basis:  35%;
+}
+
+.step {
+  margin: 0 auto 3rem auto;
+  height: 50vh;
+}

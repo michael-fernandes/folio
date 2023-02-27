@@ -31,15 +31,15 @@ header, footer {
   }
 }
 
-.header-link {
-  color: var(--grey);
-  text-decoration: unset;
-  font-weight: 500;
-  &:hover {
-    transition: 500ms;
-    color: black;
-  }
-}
+// .header-link {
+//   color: var(--grey);
+//   text-decoration: unset;
+//   font-weight: 500;
+//   &:hover {
+//     transition: 500ms;
+//     color: black;
+//   }
+// }
 
 .home-link {
   text-decoration: unset;
@@ -67,4 +67,57 @@ footer {
   color: var(--grey);
   font-size: 0.8rem;
   margin: auto;
+}
+
+
+.header-link{
+  position: relative;
+  color: var(--grey);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+// .header-link:hover {
+//   transition: 500ms;
+//   color: var(--grey);
+//   opacity: 0.8;
+// }
+
+
+.active-header-link {
+  .header-link {
+    color: var(--grey);;
+  }
+}
+
+.header-link:before, .header-link:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: var(--light-grey);;
+}
+
+.header-link:before {
+  left: -2.5px;
+}
+
+.header-link:after {
+  right: 2.5px;
+  background: var(--grey);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.header-link:hover:before {
+  background: var(--grey);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.header-link:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }

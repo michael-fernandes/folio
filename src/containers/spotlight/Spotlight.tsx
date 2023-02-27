@@ -30,12 +30,12 @@ export default function About() {
           </p>
           <p>
             Increasingly, I am interested in the social implications of intelligence augmentation of predictive
-            tools. In design, I take the most joy finding designs that give autonomy to the most vulenerable persons
-            affected by a technology, while simutaneously raising the floor for everyone else.
+            tools. In design, I take the most joy finding designs that give autonomy to the most vulnerable persons
+            affected by a technology, while simultaneously raising the floor for everyone else.
           </p>
 
 
-          <img src={Lines} className="margin-20 small-img" />
+          {/* <img src={Lines} className="margin-20 small-img" /> */}
         </animated.div>
       </ContentWrapper>
     </div>

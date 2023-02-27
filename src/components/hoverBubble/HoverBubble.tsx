@@ -106,7 +106,7 @@ export default function HoverBubble({ showDots }: { showDots: boolean }) {
 
       const simulation = d3
         .forceSimulation<ForceNode>(nodes)
-        .alpha(0.3)
+        .alpha(0.2)
         .alphaDecay(0.001)
         .alphaTarget(0.15) // stay hot
         .velocityDecay(0.025) // low friction

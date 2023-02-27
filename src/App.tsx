@@ -22,6 +22,7 @@ import "./projects/ProjectWriteUps.scss";
 import AlternativeSpringBreak from "./projects/ASB/AlternativeSpringBreak";
 import ReactGA from 'react-ga';
 import { useEffect } from "react";
+import CovidScroller from "./projects/covid/CovidScroller";
 
 if (process.env.NODE_ENV !== "development") {
   // Add to app engine, right now more useful to have
@@ -51,6 +52,7 @@ function App() {
             }
           />
           <Route path="bus" element={<Bus />} />
+          <Route path="test" element={<CovidScroller />} />
           <Route path="radify" element={<Radify />} />
           <Route path="tongle" element={<Tongle />} />
           <Route path="covid" element={<Covid />} />
@@ -62,7 +64,7 @@ function App() {
         {pathname !== '/' && <Footer />}
         <div className="footer flex">
           <div className="m-auto">
-            Michael Fernandes © 2022
+            Michael Fernandes 2022
           </div>
         </div>
       </main>

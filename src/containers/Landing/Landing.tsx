@@ -1,7 +1,7 @@
 import HoverBubble from "../../components/hoverBubble/HoverBubble";
 import ContentWrapper from "../layout/ContentWrapper";
 import { animated, easings, useSpring } from 'react-spring';
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import debounce from 'lodash.debounce';
 
 import "./Landing.scss";
@@ -12,6 +12,10 @@ export default function Landing({ }: Props) {
   const [showDots, setDotsVisible] = useState(false);
   const fadeInUp = fadeInUpSpring({});
   const debouncedSetDots = useMemo(() => debounce(() => setDotsVisible(true), 100), [setDotsVisible]);
+
+  useEffect(() => {
+    localStorage.setItem('firstLoad', 'false');
+  }, []);
 
   const fadeIn = useSpring({
     // from: { x: 80, opacity: 0 }, // fade in left otherwise

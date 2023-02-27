@@ -119,7 +119,7 @@ export default function Tongle() {
           </p>
           <Table name={"Workshop #2"} rows={WORKSHOPS["Workshop #2"]} />
           <p>
-            Workshop #2 sought to validate and further assumptions workshop leaders made after workshop #1. By using a survey admistered before the workshop particpants were given a chance to shape the unfolding of what the design process focused on from that point further. Using the validated data, Particpants took key themes and applied them to their first prototypes of what a RUC might look like.
+            Workshop #2 sought to validate and further assumptions workshop leaders made after workshop #1. Using a survey admistered before the workshop, particpants were given a chance to shape the unfolding of what the design process focused on from that point further. Using the validated data, Particpants took key themes and applied them to their first prototypes of what a RUC might look like.
           </p>
           <Table name={"Workshop #3"} rows={WORKSHOPS["Workshop #3"]} />
           <p className="content-exp">
@@ -144,7 +144,7 @@ export default function Tongle() {
           "For me, my most important value is accuracy, I can't imagine a solution that isn't highly accurate. However for [names other participant] the most imporatant value is privacy, and finding something that works for both of us seems hard."
         </p>
         <p>
-          From this we realized we had to create a flexible solution, one that allowed privacy during moments where citizens needed it while also supporting accuracy (for example, allowing locaiton data to be collected when participants travel out of state or on private roads). Our product idea Tongle emerged to allow users to flexibly toggle between different methods of tracking RUC mileage.  Using a bluetooth device connected to a car's OBDII port users can track mileage driven by a registered car in general. By using a an app to connect to the device a user can further log and audit particular trips that require location services such as driving out of state or on private roads.
+          From this we realized we had to create a flexible solution, one that allowed privacy during moments where citizens needed it while also supporting accuracy (for example, allowing locaiton data to be collected when participants travel out of state or on private roads). Our product idea Tongle emerged to allow citizens to flexibly toggle between different methods of tracking RUC mileage.  Using a bluetooth device connected to a car's OBDII port users can track mileage driven by a registered car in general. Using an app connected to the device (Tongle), a citizen can further log and audit particular trips that require location services such as driving out of state or on private roads.
         </p>
       </div>
       <div>
@@ -155,10 +155,10 @@ export default function Tongle() {
       <div className="content">
         <h2>Reflection</h2>
         <p>
-          Ultimately, the participatory process offered a way to do research through design. While the sponsors of the project, like our idea because it provided a solution that worked for a broad group of citizens, I think more importantly the project lent key evidence that a smart-phone only solution would not work in isolation. Our pairing of a physical device that tracked miles when privacy is needed and a smart phone when accuracy is needed allowed for flexible use of the system. Letting users get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
+          Ultimately, the participatory process offered a way to do research through design. While the sponsors of the project, like our idea because it provided a solution that worked for a broad group of citizens, I think more importantly the project lent key evidence that a smart-phone only solution would not work in isolation. Our pairing of a physical device that tracked miles when privacy is needed and a smart phone when accuracy is needed allowed for flexible use of the system. Letting citizens get accuracy (in case they leave the state), privacy, a precesion (two-systems recording) when necessary.
         </p>
         <p>
-          By focusing on human-values(via a value sensitive design framework), we were able to increase end-user acceptance of the final proposed solution. Using co-creation helped uncover what types of values were embded in the design challenge, and then bringing these values to the forefront of the co-creation was vital for the sucess of the project. Further the slow unwinding of the design challenge that happened during the sequential workshops allowed for both the participants and design leaders to slowly digest the nuisances of the problem and avoid gut reactions.
+          Focusing on human-values(via a value sensitive design framework), we were able to increase citizen acceptance of the final proposed solution. Using co-creation helped uncover what types of values were embded in the design challenge, and then bringing these values to the forefront of the co-creation was vital for the sucess of the project. Further the slow unwinding of the design challenge that happened during the sequential workshops allowed for both the participants and design leaders to slowly digest the nuisances of the problem and avoid gut reactions.
         </p>
       </div>
     </ContentWrapper >

@@ -15,7 +15,7 @@ export default function Header({ isFooter: isBottom }: Props) {
           <li className="action">
             {pathname === '/'
               ? <a className="header-link text-link" href="#projects">Projects</a>
-              : <Link className="header-link text-link" to={{ pathname: "", hash: "#projects" }}>Projects</Link>}
+              : <Link className="header-link" to={{ pathname: "", hash: "#projects" }}>Projects</Link>}
           </li>
           <li className="action"><Link className="header-link text-link" to="/about">About</Link></li>
         </ul>

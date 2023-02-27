@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 797.63 323.77">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        font-size: 11.16px;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #231f20;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-7 {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-2" points="43.17 270.44 145.9 163.22 223.45 232.87 397 66.25 554.37 161.71 797.13 20.91 797.13 89.81 556.25 197.1 404.91 142.14 221.57 267.96 144.77 206.89 43.17 270.44"/>
+  <line class="cls-4" x1="20.41" y1="1.96" x2="20.41" y2="282.85"/>
+  <line class="cls-4" x1="797.13" y1="282.85" x2="20.41" y2="282.85"/>
+  <polyline class="cls-3" points="43.17 270.44 145.28 184.92 222.83 260.1 395.58 93.89 554.51 179.41 797.13 38.03"/>
+  <text class="cls-7" transform="translate(0 267.96)"><tspan x="0" y="0">10</tspan></text>
+  <text class="cls-7" transform="translate(0 238.59)"><tspan x="0" y="0">20</tspan></text>
+  <text class="cls-7" transform="translate(0 209.22)"><tspan x="0" y="0">30</tspan></text>
+  <text class="cls-6" transform="translate(0 180.06)"><tspan x="0" y="0">40</tspan></text>
+  <text class="cls-6" transform="translate(0 151.61)"><tspan x="0" y="0">50</tspan></text>
+  <text class="cls-6" transform="translate(0 123.16)"><tspan x="0" y="0">60</tspan></text>
+  <text class="cls-6" transform="translate(0 94.7)"><tspan x="0" y="0">70</tspan></text>
+  <text class="cls-6" transform="translate(0 66.25)"><tspan x="0" y="0">80</tspan></text>
+  <text class="cls-6" transform="translate(0 37.79)"><tspan x="0" y="0">90</tspan></text>
+  <text class="cls-6" transform="translate(0 9.34)"><tspan x="0" y="0">100</tspan></text>
+  <text class="cls-7" transform="translate(386.07 320.77)"><tspan x="0" y="0">D</tspan><tspan class="cls-5" x="7.99" y="0">a</tspan><tspan class="cls-1" x="13.73" y="0">t</tspan><tspan x="17.63" y="0">es</tspan></text>
+</svg>
