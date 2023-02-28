@@ -1,33 +1,16 @@
 import { useRef, useState } from 'react'
 import { Scrollama, Step } from 'react-scrollama';
 import Graph from './Graph';
-import graph from './imgs/graph.mp4';
-import uncertainty from './imgs/uncertainty.gif';
 
 export default function CovidScroller() {
-  const videoRef = useRef<any>();
   const scrollerRef = useRef<any>();
   const [step, setStepIndex] = useState(0);
 
   const onStepEnter = (e: any) => {
     const { data, } = e;
-    console.log(data);
     setStepIndex(data);
-    // console.log(data);
-    // if (data === 1 && scrollerRef.current) {
-    //   console.log('click');
-    //   scrollerRef.current.click();
-    // }
-
-    // if (data === 2 && videoRef.current) {
-    //   videoRef.current.play();
-    //   console.log('played')
-    // }
   };
 
-  // accuracy
-  // accessibility
-  // usability
   return (
     <div className="scrollama-container">
       <div className="graphic-container">

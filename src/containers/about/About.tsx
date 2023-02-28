@@ -19,20 +19,20 @@ export default function About() {
             <img className="about-image" src={headshot} />
           </div>
           <div className="about-content">
-            <h1>Me</h1>
+            <h1>Hi my name is Michael</h1>
+            <p>Although, many of my friends call me Fern. You are welcome to call me either. My preferred pronouns are he/him. I take great pride in being a 2nd generation immigrant born to a father who emigrated from Tanzania and a mother from India.</p>
             <p>
-              My design career has taken me to some pretty surprising places so far . From finding myself on the virtual front lines for the fight against COVID-19, to a small business performing a green lighting retrofit. The one thing I have followed this whole time has been a desire to balance technical complexity with creating Human Centered products.
+              My design career has taken me to some pretty surprising places so far. From finding myself on the virtual front lines of the fight against COVID-19, to a small business performing a green lighting retrofit. The one thing I have followed this whole time has been a desire to balance technical complexity with creating Human Centered products.
             </p>
             <p>
-              In the roles I take on, I tend to wear two faces, half software developer and half engineer. To do this I have deployed focused skills around Data Visualization and design for decesion making all the while seeking out situations to deploy inclusive design techniques like participatory design.
+              In the roles I take on, I tend to wear two faces, half software developer and half engineer. To do this I have deployed focused skills around Data Visualization and design for decision making all the while seeking out situations to deploy inclusive design techniques like participatory design.
             </p>
             <p>
-              Currently, I am exploring the social impact of automation via a role as senior UX engineer at Simplr. Outside of work you can either find me in the outdoors(hopefully skiing) or cooking the latest dish I'm obsseed with.
+              Currently, I am exploring the social impact of automation via a role as a Senior UX Engineer at <a href="https://www.simplr.ai/">Simplr</a>. Outside of work you can either find me in the outdoors(hopefully skiing) or cooking the latest dish I'm currently trying to perfect.
             </p>
           </div>
         </div>
       </div>
-
     </ContentWrapper>
   )
 }

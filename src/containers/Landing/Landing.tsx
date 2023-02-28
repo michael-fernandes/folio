@@ -46,7 +46,7 @@ export default function Landing({ }: Props) {
               with what matters
             </h1>
           </animated.div>
-          <animated.h2 className="subtitle" style={fadeIn}>Inclusive design in a data driven future</animated.h2>
+          <animated.h2 className="subtitle" style={fadeIn}>Inclusive design for a data driven future</animated.h2>
         </animated.div>
         <div className="landing-hover">
           <HoverBubble showDots={showDots} />

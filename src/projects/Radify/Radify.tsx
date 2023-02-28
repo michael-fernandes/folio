@@ -39,30 +39,30 @@ export default function Radify() {
         </p>
         <p>
           Sometimes a linechart is boring. When you are trying
-          to draw attention to a a dataset, sometimes something a little
+          to draw attention to a dataset, sometimes something a little
           flashier can be less effective at encoding the data, but more
           effective at communicating the right data.
         </p>
         <p>
-          This project began out of curiosity to whether or not a radial
+          This project began out of curiosity as to whether or not a radial
           line chart using a continuous time series could be communicated to
-          a wide audience sucessfully.
+          a wide audience successfully.
         </p>
         <p>
           The website was built with multiple sources of feedback including in person,
-          crowd sourced feedback and usage monitoring. Individual feedback included interpreability
+          crowd sourced feedback and usage monitoring. Individual feedback included interoperability
           tests. Crowd sourced feedback including posting the visualization as an animation
           to the subreddit /r/dataisbeautiful. Usage metrics using Google Analytics showed simplifications of
-          the charts including the removal of toggles which previously switched the chart, from a gradient line to an animated line.
-          Admitedly, even with multiple rounds and sources of feedback, this
-          chart is less then straightforward than a linear line chart to read, but still shows promise
+          the charts including the removal of toggles that previously switched the chart, from a gradient line to an animated line.
+          Admittedly, even with multiple rounds and sources of feedback, this
+          the chart is less than straightforward than a linear line chart to read, but still shows promise
           from the sucess on the /r/dataisbeautiful subreddit (~7k upvotes in 48 hours).
         </p>
         <p>
-          Nonetheless the success of the chart seems to lead to some questions:
+          Nonetheless, the success of the chart seems to lead to some questions:
         </p>
         <ol>
-          <li>Can people effectiveley make times</li>
+          <li>Can people effectively make times</li>
           <li>
             what are the key takeaways that this chart has vs normal line
             charts

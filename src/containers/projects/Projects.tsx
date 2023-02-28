@@ -13,7 +13,7 @@ export const PROJECTS = [
     discipline: "design research",
     area: "Civil Tech",
     description:
-      "Co-creation for a civic technology using perspective from across the political spectrum and drawing from as many demographics as possible to inform the design.",
+      "Co-creation for a civic technology using perspectives from across the political spectrum and drawing from as many demographics as possible to inform the design.",
     link: "tongle",
     weight: 4,
     img: TongleImg,
@@ -25,7 +25,7 @@ export const PROJECTS = [
     discipline: "design research + prototyping",
     area: "Academic Resaearch",
     description:
-      "Making decesion around quantitive predictions easier for even persons unfamiliar with data decesion making.",
+      "Making decesion around quantitive predictions easier, even persons unfamiliar with data-driven decision making.",
     link: "bus",
     weight: 4,
     img: BusImg,
@@ -37,11 +37,11 @@ export const PROJECTS = [
     discipline: "development + design re-thinking",
     area: "Global Health",
     description:
-      "Rapidly deployed covid forecast visualization tool, and a retroactive look at the alignment between public health and the public.",
+      "Rapidly deployed covid forecast visualization tool, and a retroactive look at the alignment between public health and the public facing tools.",
     link: "covid",
     weight: 2,
     img: CovidImg,
-    color: '#3E394B',
+    color: '#1a2546',
 
   }
 ];
@@ -50,9 +50,8 @@ export const SMALL_PROJECTS = [
     name: "Alternative Spring Break",
     discipline: "volunteering",
     area: "Inclusion in design + tech",
-    description: "K-12 out resach to expose 80+ middle school students of the Makah tribe to design thinking.",
-    // icon: RadifyIcon, //
-    link: "neah-bay",
+    description: "K-12 outreach to expose 80+ middle school students of the Makah tribe to design thinking.",
+    link: "design-thinking-workshops",
     weight: 1,
   },
   {
@@ -60,8 +59,7 @@ export const SMALL_PROJECTS = [
     shortName: "Child Mortality",
     discipline: "development + design",
     area: "Global Health",
-    description: "An interactive story about achieving global health equity in under-5 child mortality.",
-    // icon: ChildMortalityIcon, // Show many different curves with different faded colors. Solid line top lighter bottom.
+    description: "A data story about achieving global health equity in under-5 child mortality.",
     link: "child-mortality",
     weight: 1,
   },
@@ -69,8 +67,7 @@ export const SMALL_PROJECTS = [
     name: "Radify",
     discipline: "data viz",
     area: "Economics",
-    description: "Continous radial representation of seasonal data, focusing on the usecase of Inflation data.",
-    // icon: RadifyIcon, //
+    description: "Continous radial representations of seasonal data, focusing on the usecase of inflation data.",
     link: "radify",
     weight: 1,
   },

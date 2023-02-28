@@ -20,7 +20,7 @@ export default function AlternativeSpringBreak() {
         </div>
         <div className="overview-description">
           <h4 className="overview-name">Role</h4>
-          <span className="overview-item">Workshop coleader and program cofounder</span><br /><br />
+          <span className="overview-item">Workshop co-leader and program cofounder</span><br /><br />
 
           <span className="overview-summary">
             <i>K-12 outreach to expose 80+ middle school students of the Makah tribe to design thinking.</i>
@@ -31,7 +31,7 @@ export default function AlternativeSpringBreak() {
         <h2>About the program</h2>
         <p>
           During the Winter and Spring of 2017, together with a group of fellow students form the UW HCDE department we planned a series of week long design thinking workshops as a college pipeline project. The larger goal of the design workshops was
-          to introduce students to the concept of design thinking with hopes of bringing them into the design field later in life. We partneted with the Makah Tribe who's anceteral land resides in the North East most area of Washington state.
+          to introduce students to the concept of design thinking with the hopes of bringing them into the design field later in life. We partnered with the Makah Tribe who's ancestral land resides in the North East most region of Washington state.
         </p>
       </div>
       <div className="content">
@@ -44,7 +44,7 @@ export default function AlternativeSpringBreak() {
       <div className="content writeup">
         <h2>Program goals</h2>
         <p>
-          As a outreach program, we hoped to work with youth members of the Makah Tribe to introduce them to Design Thinking. With the hope they might have opportunities to apply the skills they learned to projects in their community. In retrospective this was an ideal situation. In reality, we arrived and faced all the normal challenges with facing middle school students. What's more it appeared,to me at least, that our tech influenced view of design thinking did not align with the values of the community. Instead of thinking about comodificaiton lots of our students were thinking from viewpoints of the envorinment or their collective community
+          As an outreach program, we hoped to work with youth members of the Makah Tribe to introduce them to Design Thinking. With the hope, they might have opportunities to apply the skills they learned to projects in their community. In retrospective, this was an ideal situation. In reality, we arrived and faced all the normal challenges with facing middle school students. What's more it appeared, to me at least, that our tech influenced view of design thinking did not align with the values of the community. Instead of thinking about commodification lots of our students were thinking from viewpoints of the environment or their collective community
         </p>
       </div>
       <div>
@@ -57,7 +57,7 @@ export default function AlternativeSpringBreak() {
       <div className="content writeup">
         <h2>Outcome</h2>
         <p>
-          In the end my group of student leaders and I adapted our lesson plan for 80+ 6-8 gradem students attending school on the Makah Reservation. It was dynamic experience where I found myself learning form our students I'm sure as much as they were learning from us. In the end I'm pretty confident that most students won't complete a whole UCD process until their next exposure. I think more importaant was the one on one mentoring where design thinking could be modeled and influenced.
+          My group of student leaders and I adapted our lesson plan for 80+ 6-8 grade students attending school on the Makah Reservation. It was a dynamic experience where I found myself learning from our students I'm sure as much as they were learning from us. In the end, I'm pretty confident that most students won't complete a whole UCD process until their next exposure. I think more important was the one on one mentoring where design thinking could be modeled and influenced.
         </p>
       </div>
       <div className="writeup content">

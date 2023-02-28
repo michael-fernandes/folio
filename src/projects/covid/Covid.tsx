@@ -11,7 +11,7 @@ export default function Covid({ }: Props) {
       <ContentWrapper>
         <div className="overview container">
           <div className="overview-title">
-            <h1>An Ancedotal Design Reflection on COVID Visualization.</h1>
+            <h1>An Ancedotal Design Reflection on COVID-19 Visualization.</h1>
           </div>
           <div className="overview-description">
             <h4 className="overview-name">Role</h4>
@@ -24,7 +24,7 @@ export default function Covid({ }: Props) {
         </div>
         <div className="content">
           <p>
-            When the pandemic first started, I was working at IHME creating web tools and other software for disease modeling research. In the early days of the pandemic, one of the first outbreaks happened in Washington state placing IHME at the forefront of a battle to model the outbreak of COVID-19 for months to come. What unfolded next was perhaps the United State’s (and later globe’s) first collective encounter with a predictive model.  Below can access the web tool that I contributed to professionally in the link below. However after visiting the link, I will revisit the visualiaztions and highlight what we might changes might be done if my organization could revisit those early days of the pandemic.
+            When the pandemic first started, I was working at IHME creating web tools and other software for disease modeling research. In the early days of the pandemic, one of the first outbreaks happened in Washington state placing IHME at the forefront of a battle to model the outbreak of COVID-19 for months to come. What unfolded next was perhaps the international community's first collective encounter with a predictive model.  Below can access the web tool that I contributed to professionally in the link below. However, after visiting the link, I will revisit the visualizations and highlight what changes might be done if my organization could revisit those early days of the pandemic.
           </p>
           <div className="overview-button-container flex center-content">
             <p>
@@ -34,20 +34,20 @@ export default function Covid({ }: Props) {
         </div>
         <img src={WhiteHouse} className="cover-1-img" />
         <div className="content">
-          To me, perhaps the biggest problems with covid predictions was not only people's disbelief or rejection of them but also the  rejection of other people's disbeleif. While COVID models did not exist in a vaccum I often wonder what the public health community I had an inside seat to at the time, could of done better to make our predictions more effective, usable and understandable for the broad range of the public that ended up interfacing with them.
+          To me, perhaps the biggest problem with COVID-19 forecasts might not only have been people's disbelief or rejection of them but also the rejection of other people's disbelief. While COVID-19 models did not exist in a vacuum I often wonder what the public health community I had an inside seat to at the time, could have done better to make our predictions more effective, usable and understandable for the broad range of the public that ended up interfacing with them.
         </div>
         <div className="content">
-          In the following provide a design reflection on what my team could of done differently to have better served the eventual userbase that used our Visualization Tool. The following interactive covers uncertainty communication improvements, alternative accesible representations of the predictions and suggests a more broader design philosophy that could be employed to create these visualizations in the future.
+          The following provides a design reflection on what my team could have done differently to better serve the general population user base that eventually used our decision-making tool. The following interactive covers uncertainty communication improvements and alternative accessible representations of the predictions and suggests a broader design philosophy that could be employed to create these visualizations in the future.
         </div>
         <CovidScroller />
         <div className="content">
           <p>
-            The stakes around decisions made by the model were high and created a situation where nearly everyone became indirect stakeholders of the technology output. In the United States, especially politically. With so many indirect stakeholders, broadcasting a predictive outputs in a way that aligns with the values of all of them sounds hard maybe impossible. Nonetheless more widespread buy-in (and user acceptance) from the larger population could lead to better achievement of the Public Health goals that were initially behind covid modeling.
+            The stakes around decisions made by the model were high and created a situation where nearly everyone became indirect stakeholders of the technology output. In the United States, especially politically. With so many indirect stakeholders, broadcasting predictive outputs in a way that aligns with the values of all of them sounds hard maybe impossible. Nonetheless more widespread buy-in (and user acceptance) from the larger population could lead to better achievement of the Public Health goals that were initially behind covid modeling.
           </p>
         </div>
         <div className="content">
           <p>
-            Moving towards a particpatory design strategy of communication seems scary. Giving up control of the output seems like it could lead to undesirable public health messaging. And in the early days of covid it was totally reasonable to want to control for unkown factors. Using a participatory strategy that included a wide range of views important to the design challenge, could lead to a end product with a wider range of user acceptance and usability.
+            Moving towards a participatory design strategy of communication seems scary. Giving up control of the output seems like it could lead to undesirable public health messaging. And in the early days of COVID-19 it was totally reasonable to want to control for unknown factors. Using a participatory strategy that included a wide range of views important to the design challenge, could lead to an end product with a wider range of user acceptance and usability.
           </p>
         </div>
         {/* visual image of the screen shot */}

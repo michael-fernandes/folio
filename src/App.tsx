@@ -57,8 +57,7 @@ function App() {
           <Route path="tongle" element={<Tongle />} />
           <Route path="covid" element={<Covid />} />
           <Route path="child-mortality" element={<ChildMortality />} />
-          <Route path="neah-bay" element={<AlternativeSpringBreak />} />
-
+          <Route path="design-thinking-workshops" element={<AlternativeSpringBreak />} />
           <Route path="about" element={<About />} />
         </Routes>
         {pathname !== '/' && <Footer />}

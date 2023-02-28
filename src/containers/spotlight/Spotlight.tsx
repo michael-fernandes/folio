@@ -1,6 +1,5 @@
 import ContentWrapper from '../layout/ContentWrapper'
 import './Spotlight.scss';
-import Lines from './lines.svg'
 import { Link } from 'react-router-dom';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { useRef } from 'react';
@@ -24,16 +23,12 @@ export default function About() {
         <div ref={triggerRef as unknown as Ref<HTMLDivElement>} />
         <animated.div style={fadeInUp}>
           <p>
-            I'm a technical digital designer with experience in <Link className="spotlight-link text-link" to="/forecast">Global Health</Link>,
-            {" "}<Link className="spotlight-link text-link" to="/tongle">Civil Tech</Link>, and Sustainability. My toolkit as a designer is grounded in
-            human-centered design practices, some of my favorites of which are value-sensitive design, co-creation, and rapid prototyping.
+            I'm a technical digital designer with experience in <Link className="spotlight-link text-link" to="/covid">Global Health</Link>,
+            {" "}<Link className="spotlight-link text-link" to="/tongle">Civil Tech</Link>, and Sustainability. My toolkit as a designer is grounded in human-centered design practices, some of my favorites of which are value-sensitive design, co-creation, and technical prototyping.
           </p>
           <p>
-            Increasingly, I am interested in the social implications of intelligence augmentation of predictive
-            tools. In design, I take the most joy finding designs that give autonomy to the most vulnerable persons
-            affected by a technology, while simultaneously raising the floor for everyone else.
+            Increasingly, I am interested in the social implications of intelligence augmentation and automation. In design, I find the most joy uncovering designs that give autonomy to the most vulnerable persons affected by a technology, while simultaneously raising the floor for everyone else.
           </p>
-
 
           {/* <img src={Lines} className="margin-20 small-img" /> */}
         </animated.div>
